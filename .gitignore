@@ -1,0 +1,18 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+node_modules
+
+# OS generated files
+.DS_Store
+
+# ruby
+Gemfile.lock
+
+# vscode
+.vscode
+
+# python
+.python-version
