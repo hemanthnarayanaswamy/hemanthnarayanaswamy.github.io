@@ -1,0 +1,40 @@
+featured:
+  - title: E-Commerce Platform
+    subtitle: Full-Stack Web Application
+    description: Built a complete e-commerce experience with secure payments, order management, and responsive UI.
+    technologies: [React, Node.js, Express, MongoDB, Stripe API]
+    demo_url: https://example.com/ecommerce
+    repo_url: https://github.com/hemanthnarayanaswamy/ecommerce
+    image: /assets/img/projects/ecommerce.jpg
+  - title: Machine Learning Dashboard
+    subtitle: Real-time Data Analytics
+    description: Interactive dashboard with live streaming data, predictive analytics, and automated insights.
+    technologies: [Python, Flask, React, D3.js, Scikit-learn]
+    demo_url: https://example.com/ml-dashboard
+    repo_url: https://github.com/hemanthnarayanaswamy/ml-dashboard
+    image: /assets/img/projects/ml-dashboard.jpg
+  - title: Mobile Fitness App
+    subtitle: Cross-Platform Coaching
+    description: React Native app that integrates with wearables, tracks workouts, and surfaces health insights.
+    technologies: [React Native, Firebase, HealthKit, Google Fit]
+    demo_url: https://example.com/fitness-app
+    repo_url: https://github.com/hemanthnarayanaswamy/fitness-app
+    image: /assets/img/projects/fitness-app.jpg
+
+open_source:
+  - category: Popular Libraries
+    description: Contributions to React component libraries, Python data tooling, and DevOps automation scripts.
+  - category: Community Projects
+    description: Organizer and speaker at meetups, mentorship programs, and documentation initiatives.
+
+academic:
+  - category: Research & Development
+    description: AI-powered recommendations, blockchain prototypes, and computer vision applications from academic work.
+  - category: Hackathon Wins
+    description: Multiple accolades including AI Innovation Challenge 2023, FinTech Hackathon 2022, and sustainability awards.
+
+client:
+  - category: Enterprise Solutions
+    description: Banking modernization, healthcare data platforms, and real-time retail analytics for large organizations.
+  - category: Startup Collaborations
+    description: MVP builds, technical consulting, and team bootstrapping for early-stage startups.

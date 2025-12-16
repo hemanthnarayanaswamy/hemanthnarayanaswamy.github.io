@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/placeholders';
+
+.skill-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--btn-border-color);
+  border-radius: v.$radius-lg;
+}
+
+.skill-pills {
+  display: grid;
+  gap: 1rem;
+
+  &--5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .skill-pill {
+    padding: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+
+    img {
+      max-width: 48px;
+      max-height: 48px;
+      object-fit: contain;
+    }
+
+    &__label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+  }
+}
+
+.achievement-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .achievement-link {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    border-radius: v.$radius-lg;
+    border: 1px solid var(--btn-border-color);
+    background-color: var(--card-bg);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--card-shadow);
+    }
+
+    img {
+      max-width: 48px;
+      max-height: 48px;
+      object-fit: contain;
+    }
+  }
+}

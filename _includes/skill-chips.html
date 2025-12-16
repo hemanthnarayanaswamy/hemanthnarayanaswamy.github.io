@@ -1,0 +1,10 @@
+{% assign skills = include.items | split: "," %}
+<div class="skill-pills skill-pills--5">
+  {% for entry in skills %}
+    {% assign parts = entry | split: "|" %}
+    <div class="skill-pill text-center">
+      <img src="{{ parts[1] }}" alt="{{ parts[0] }} icon" loading="lazy" width="40" height="40" class="mb-2">
+      <span class="skill-pill__label">{{ parts[0] }}</span>
+    </div>
+  {% endfor %}
+</div>

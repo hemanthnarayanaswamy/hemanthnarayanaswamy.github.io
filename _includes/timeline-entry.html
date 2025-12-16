@@ -1,0 +1,88 @@
+{% assign title_field = include.title_field | default: 'title' %}
+{% assign subtitle_field = include.subtitle_field | default: 'subtitle' %}
+{% assign period_field = include.period_field | default: 'period' %}
+{% assign summary_field = include.summary_field | default: 'summary' %}
+{% assign highlights_field = include.highlights_field | default: 'highlights' %}
+{% assign meta_field = include.meta_field | default: 'meta' %}
+{% assign image_field = include.image_field %}
+{% assign cta_label_field = include.cta_label_field | default: 'cta_label' %}
+{% assign cta_url_field = include.cta_url_field | default: 'cta_url' %}
+
+{% assign item = include.item %}
+{% assign period_override = include.period %}
+{% assign highlights_override = include.highlights %}
+
+{% assign title = item[title_field] %}
+{% assign subtitle = item[subtitle_field] %}
+{% assign period = period_override | default: item[period_field] %}
+{% assign summary = item[summary_field] %}
+{% assign highlights = highlights_override | default: item[highlights_field] %}
+{% assign meta = item[meta_field] %}
+{% assign cta_label = item[cta_label_field] %}
+{% assign cta_url = item[cta_url_field] %}
+{% assign image_value = nil %}
+
+{% if image_field %}
+  {% assign image_value = item[image_field] %}
+{% endif %}
+
+<details class="timeline-entry" {% if include.open %}open{% endif %}>
+  <summary>
+    <div class="timeline-entry__header">
+      <div>
+        {% if period %}
+          <p class="timeline-entry__period mb-1">{{ period }}</p>
+        {% endif %}
+        {% if title %}
+          <h3 class="timeline-entry__title mb-1" data-toc-skip>{{ title }}</h3>
+        {% endif %}
+        {% if subtitle %}
+          <p class="timeline-entry__subtitle mb-0">{{ subtitle }}</p>
+        {% endif %}
+        {% if meta %}
+          <p class="timeline-entry__meta mb-0 text-muted">{{ meta }}</p>
+        {% endif %}
+      </div>
+      <span class="timeline-entry__toggle" aria-hidden="true">
+        <i class="fas fa-chevron-down"></i>
+      </span>
+    </div>
+  </summary>
+
+  <div class="timeline-entry__body">
+    {% if summary %}
+      <div class="timeline-entry__summary">
+        {{ summary | markdownify }}
+      </div>
+    {% endif %}
+
+    {% if highlights %}
+      <ul class="timeline-entry__list">
+        {% for highlight in highlights %}
+          <li>{{ highlight | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if image_value %}
+      {% assign image_path = image_value.path | default: image_value %}
+      {% assign alt_text = image_value.alt | default: title %}
+      {% assign resolved_image = image_path %}
+      {% unless image_path contains '://' %}
+        {% assign resolved_image = image_path | relative_url %}
+      {% endunless %}
+      <figure class="timeline-entry__figure">
+        <img src="{{ resolved_image }}" alt="{{ alt_text }}">
+        {% if alt_text %}
+          <figcaption class="text-muted small mt-2">{{ alt_text }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    {% if cta_url %}
+      <a class="btn btn-outline-primary btn-sm" href="{{ cta_url }}" {% if include.cta_external %}target="_blank" rel="noopener"{% endif %}>
+        <i class="fas fa-arrow-up-right-from-square me-1"></i>{{ cta_label | default: 'Learn More' }}
+      </a>
+    {% endif %}
+  </div>
+</details>

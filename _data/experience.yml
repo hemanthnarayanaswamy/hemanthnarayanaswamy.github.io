@@ -1,0 +1,42 @@
+- role: Senior Software Engineer
+  company: TechCorp Solutions · Bangalore, India
+  start: 2022-01-01
+  end:
+  summary: Leading the design and delivery of microservices-based platforms that power enterprise-scale applications.
+  work:
+    - Led multi-team adoption of event-driven services, improving resiliency and reducing MTTR by 35%.
+    - Mentored junior engineers through code reviews and architecture clinics, raising team delivery quality.
+  project:
+    - Architected a payments hub that processed 3M+ transactions/day with automated rollbacks and observability baked in.
+    - Built CI/CD templates that trim deployment time from hours to minutes through parallel pipelines.
+  technology:
+    - Go · Node.js · AWS (EKS, Lambda, DynamoDB)
+    - Kafka · Terraform · GitHub Actions
+- role: Full-Stack Developer
+  company: InnovateTech · Remote
+  start: 2020-03-01
+  end: 2021-12-01
+  summary: Built and maintained customer-facing products across the stack while collaborating closely with designers and PMs.
+  work:
+    - Delivered five production web applications with responsive UI and A11y-first design.
+    - Reduced escaped defects by 30% by institutionalizing component libraries and snapshot testing.
+  project:
+    - Implemented a real-time analytics dashboard with web sockets and serverless ingestion.
+    - Led rebuild of onboarding flow that increased activation by 18%.
+  technology:
+    - React · TypeScript · GraphQL · Node.js
+    - PostgreSQL · AWS Amplify · Cypress
+- role: Junior Developer
+  company: StartupHub · Bangalore, India
+  start: 2019-06-01
+  end: 2020-02-01
+  summary: Contributed to MVP builds for fast-paced startups and adopted modern web practices through agile delivery.
+  work:
+    - Partnered with founders to prototype MVPs, iterating weekly on customer feedback.
+    - Built CI scripts and deployment guides that enabled non-engineers to ship updates safely.
+  project:
+    - Delivered two cross-platform apps (React Native) for health-tech pilots.
+    - Created dashboards for seed-stage founders to monitor growth metrics.
+  technology:
+    - React · React Native · Express
+    - MongoDB · Firebase · Docker

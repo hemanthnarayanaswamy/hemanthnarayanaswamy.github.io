@@ -1,0 +1,45 @@
+<article class="project-card card shadow-sm h-100">
+  <div class="row g-3 align-items-center">
+    <div class="col-md-4">
+      {% if include.project.image %}
+        <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }} screenshot" class="project-card__image" loading="lazy" />
+      {% else %}
+        <div class="project-card__image placeholder d-flex align-items-center justify-content-center">
+          <span class="text-muted">Image coming soon</span>
+        </div>
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      <h3 class="h4 mb-2" data-toc-skip>{{ include.project.title }}</h3>
+      {% if include.project.subtitle %}
+        <p class="text-muted mb-2">{{ include.project.subtitle }}</p>
+      {% endif %}
+      {% if include.project.description %}
+        <p>{{ include.project.description }}</p>
+      {% endif %}
+
+      {% if include.project.technologies %}
+        <div class="project-tech-grid mb-3">
+          {% for tech in include.project.technologies %}
+            {% assign icon = site.data.tech_icons[tech] %}
+            <div class="project-tech">
+              {% if icon %}
+                <img src="{{ icon }}" alt="{{ tech }} icon" loading="lazy" />
+              {% endif %}
+              <span>{{ tech }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="d-flex flex-wrap gap-3">
+        {% if include.project.demo_url %}
+          <a class="btn btn-outline-primary btn-sm" href="{{ include.project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
+        {% endif %}
+        {% if include.project.repo_url %}
+          <a class="btn btn-outline-secondary btn-sm" href="{{ include.project.repo_url }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

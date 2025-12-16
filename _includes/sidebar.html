@@ -11,13 +11,22 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
+    {% assign about_tab = site.tabs | where: 'url', '/about/' | first %}
     <ul class="nav">
+      {% if about_tab %}
+        <li class="nav-item{% if about_tab.url == page.url %}{{ " active" }}{% endif %}">
+          <a href="{{ about_tab.url | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ about_tab.icon }}"></i>
+            {% capture tab_name %}{{ about_tab.url | split: '/' }}{% endcapture %}
+
+            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: about_tab.title | upcase }}</span>
+          </a>
+        </li>
+      {% endif %}
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
@@ -27,6 +36,9 @@
       </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
+        {% if about_tab and tab.url == about_tab.url %}
+          {% continue %}
+        {% endif %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>
