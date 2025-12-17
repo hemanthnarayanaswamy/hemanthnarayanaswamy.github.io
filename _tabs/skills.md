@@ -1,7 +1,6 @@
 ---
 title: Skills
 icon: fas fa-code
-order: 2
 ---
 
 <div class="row gy-4">

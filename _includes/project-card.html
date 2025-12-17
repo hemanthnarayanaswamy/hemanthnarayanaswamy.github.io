@@ -1,4 +1,4 @@
-<article class="project-card card shadow-sm h-100">
+<article class="project-card skill-card card shadow-sm h-100">
   <div class="row g-3 align-items-center">
     <div class="col-md-4">
       {% if include.project.image %}
@@ -10,7 +10,18 @@
       {% endif %}
     </div>
     <div class="col-md-8">
-      <h3 class="h4 mb-2" data-toc-skip>{{ include.project.title }}</h3>
+      {% assign link_title = include.link_title %}
+      {% if link_title == nil %}
+        {% assign link_title = true %}
+      {% endif %}
+      {% assign has_project_blog = link_title and include.project.post_url %}
+      <h3 class="h4 mb-2 project-card__title" data-toc-skip>
+        {% if has_project_blog %}
+          <a class="project-link project-link--blog" href="{{ include.project.post_url | relative_url }}">{{ include.project.title }}</a>
+        {% else %}
+          {{ include.project.title }}
+        {% endif %}
+      </h3>
       {% if include.project.subtitle %}
         <p class="text-muted mb-2">{{ include.project.subtitle }}</p>
       {% endif %}
@@ -19,21 +30,20 @@
       {% endif %}
 
       {% if include.project.technologies %}
-        <div class="project-tech-grid mb-3">
+        <p class="mb-3">
+          <strong>Technologies:</strong>
           {% for tech in include.project.technologies %}
-            {% assign icon = site.data.tech_icons[tech] %}
-            <div class="project-tech">
-              {% if icon %}
-                <img src="{{ icon }}" alt="{{ tech }} icon" loading="lazy" />
-              {% endif %}
-              <span>{{ tech }}</span>
-            </div>
+            <span class="badge bg-secondary-subtle text-secondary-emphasis me-1">{{ tech }}</span>
           {% endfor %}
-        </div>
+        </p>
       {% endif %}
 
+      {% assign show_demo = include.show_demo %}
+      {% if show_demo == nil %}
+        {% assign show_demo = true %}
+      {% endif %}
       <div class="d-flex flex-wrap gap-3">
-        {% if include.project.demo_url %}
+        {% if show_demo and include.project.demo_url %}
           <a class="btn btn-outline-primary btn-sm" href="{{ include.project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
         {% endif %}
         {% if include.project.repo_url %}

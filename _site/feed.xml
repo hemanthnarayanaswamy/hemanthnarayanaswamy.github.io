@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://hemanthnarayanaswamy.github.io/</id>
   <title>Hemanth Narayanaswamy</title>
   <subtitle>Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.</subtitle>
-  <updated>2025-12-17T11:01:16+05:30</updated>
+  <updated>2025-12-18T02:50:18+05:30</updated>
   <author>
     <name>Hemanth Narayanaswamy</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://hemanthnarayanaswamy.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://hemanthnarayanaswamy.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://hemanthnarayanaswamy.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 Hemanth Narayanaswamy </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -20,14 +20,86 @@
 
   
   <entry>
+    <title>Mobile Fitness App</title>
+    <link href="https://hemanthnarayanaswamy.github.io/projects/mobile-fitness-app/" rel="alternate" type="text/html" title="Mobile Fitness App" />
+    <published>2024-03-05T08:30:00+05:30</published>
+  
+    <updated>2024-03-05T08:30:00+05:30</updated>
+  
+    <id>https://hemanthnarayanaswamy.github.io/projects/mobile-fitness-app/</id>
+    <content type="text/html" src="https://hemanthnarayanaswamy.github.io/projects/mobile-fitness-app/" />
+    <author>
+      <name>Hemanth Narayanaswamy</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+  
+
+  <summary>Cross-platform coaching app integrated with wearables.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Machine Learning Dashboard</title>
+    <link href="https://hemanthnarayanaswamy.github.io/projects/machine-learning-dashboard/" rel="alternate" type="text/html" title="Machine Learning Dashboard" />
+    <published>2024-02-10T10:00:00+05:30</published>
+  
+    <updated>2024-02-10T10:00:00+05:30</updated>
+  
+    <id>https://hemanthnarayanaswamy.github.io/projects/machine-learning-dashboard/</id>
+    <content type="text/html" src="https://hemanthnarayanaswamy.github.io/projects/machine-learning-dashboard/" />
+    <author>
+      <name>Hemanth Narayanaswamy</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+  
+
+  <summary>Telemetry + predictive analytics dashboard for operations teams.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>E-Commerce Platform</title>
+    <link href="https://hemanthnarayanaswamy.github.io/projects/e-commerce-platform/" rel="alternate" type="text/html" title="E-Commerce Platform" />
+    <published>2024-01-15T09:00:00+05:30</published>
+  
+    <updated>2024-01-15T09:00:00+05:30</updated>
+  
+    <id>https://hemanthnarayanaswamy.github.io/projects/e-commerce-platform/</id>
+    <content type="text/html" src="https://hemanthnarayanaswamy.github.io/projects/e-commerce-platform/" />
+    <author>
+      <name>Hemanth Narayanaswamy</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+  
+
+  <summary>Full-stack marketplace MVP with secure checkout and real-time order tracking.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <link href="https://hemanthnarayanaswamy.github.io/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
     <published>2019-08-10T22:04:00+05:30</published>
   
     <updated>2019-08-10T22:04:00+05:30</updated>
   
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content type="text/html" src="http://localhost:4000/posts/customize-the-favicon/" />
+    <id>https://hemanthnarayanaswamy.github.io/posts/customize-the-favicon/</id>
+    <content type="text/html" src="https://hemanthnarayanaswamy.github.io/posts/customize-the-favicon/" />
     <author>
       <name>cotes</name>
     </author>
@@ -47,13 +119,13 @@
   
   <entry>
     <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <link href="https://hemanthnarayanaswamy.github.io/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
     <published>2019-08-09T18:25:00+05:30</published>
   
     <updated>2019-08-09T18:25:00+05:30</updated>
   
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content type="text/html" src="http://localhost:4000/posts/getting-started/" />
+    <id>https://hemanthnarayanaswamy.github.io/posts/getting-started/</id>
+    <content type="text/html" src="https://hemanthnarayanaswamy.github.io/posts/getting-started/" />
     <author>
       <name>cotes</name>
     </author>
@@ -67,58 +139,6 @@
   
 
   <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T11:40:00+05:30</published>
-  
-    <updated>2019-08-08T11:40:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content type="text/html" src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and Path  Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T09:03:00+05:30</published>
-  
-    <updated>2019-08-08T09:03:00+05:30</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content type="text/html" src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
 
   </entry>
 

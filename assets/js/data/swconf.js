@@ -13,7 +13,8 @@ const swconf = {
       '{{ "/assets/css/:THEME.css" | replace: ':THEME', site.theme | relative_url }}',
       '{{ "/" | relative_url }}',
       {% for tab in site.tabs %}
-        '{{- tab.url | relative_url -}}',
+        {% assign tab_target = tab.nav_url | default: tab.url %}
+        '{{- tab_target | relative_url -}}',
       {% endfor %}
 
       {% assign cache_list = site.static_files | where: 'swcache', true %}

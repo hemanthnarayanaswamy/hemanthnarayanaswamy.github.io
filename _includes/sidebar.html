@@ -1,6 +1,13 @@
 <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  {% unless site.theme_mode %}
+    <div class="sidebar-top-actions">
+      <button type="button" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
+    </div>
+  {% endunless %}
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
@@ -15,54 +22,40 @@
   <!-- .profile-wrapper -->
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
-    {% assign about_tab = site.tabs | where: 'url', '/about/' | first %}
+    {% assign desired_order = "/about/,/experience/,/certifications/,/projects/,/skills/,/blogs/,/categories/,/archives/,/contact/,/tags/" | split: "," %}
     <ul class="nav">
-      {% if about_tab %}
-        <li class="nav-item{% if about_tab.url == page.url %}{{ " active" }}{% endif %}">
-          <a href="{{ about_tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ about_tab.icon }}"></i>
-            {% capture tab_name %}{{ about_tab.url | split: '/' }}{% endcapture %}
-
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: about_tab.title | upcase }}</span>
-          </a>
-        </li>
-      {% endif %}
-      <!-- home -->
-      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
-        </a>
-      </li>
-      <!-- the real tabs -->
-      {% for tab in site.tabs %}
-        {% if about_tab and tab.url == about_tab.url %}
-          {% continue %}
+      {% for url in desired_order %}
+        {% assign tab = site.tabs | where: 'url', url | first %}
+        {% if tab == nil %}
+          {% assign tab = site.tabs | where: 'nav_url', url | first %}
         {% endif %}
-        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-          <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
-            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
-
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        {% if tab %}
+          {% assign target_url = tab.nav_url | default: tab.url %}
+          {% assign is_active = false %}
+          {% if target_url == '/about/' and page.url == '/' %}
+            {% assign is_active = true %}
+          {% elsif page.url == target_url %}
+            {% assign is_active = true %}
+          {% elsif target_url != '/' %}
+            {% assign target_length = target_url | size %}
+            {% assign url_prefix = page.url | slice: 0, target_length %}
+            {% if url_prefix == target_url %}
+              {% assign is_active = true %}
+            {% endif %}
+          {% endif %}
+          <li class="nav-item{% if is_active %}{{ " active" }}{% endif %}">
+            <a href="{{ target_url | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ tab.icon }}"></i>
+              {% assign tab_key = tab.tab_key | default: tab.url | replace: '/', '' | downcase %}
+              <span>{{ site.data.locales[include.lang].tabs.[tab_key] | default: tab.title | upcase }}</span>
+            </a>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    {% unless site.theme_mode %}
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
-    {% endunless %}
-
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
@@ -81,8 +74,15 @@
       {% endcase %}
 
       {% if url %}
+        {% assign resolved_url = url %}
+        {% assign has_protocol = resolved_url contains '://' %}
+        {% assign is_mailto = resolved_url contains 'mailto:' %}
+        {% assign is_js = resolved_url contains 'javascript:' %}
+        {% unless has_protocol or is_mailto or is_js %}
+          {% assign resolved_url = resolved_url | relative_url %}
+        {% endunless %}
         <a
-          href="{{ url }}"
+          href="{{ resolved_url }}"
           aria-label="{{ entry.type }}"
           {% assign link_types = '' %}
 
@@ -99,7 +99,11 @@
             rel="{{ link_types }}"
           {% endunless %}
         >
-          <i class="{{ entry.icon }}"></i>
+          {% if entry.icon_image %}
+            <img src="{{ entry.icon_image | relative_url }}" alt="{{ entry.type }} icon" class="sidebar-contact-icon" loading="lazy">
+          {% else %}
+            <i class="{{ entry.icon }}"></i>
+          {% endif %}
         </a>
       {% endif %}
     {% endfor %}

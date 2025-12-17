@@ -6,6 +6,7 @@ featured:
     demo_url: https://example.com/ecommerce
     repo_url: https://github.com/hemanthnarayanaswamy/ecommerce
     image: /assets/img/projects/ecommerce.jpg
+    post_url: /projects/e-commerce-platform/
   - title: Machine Learning Dashboard
     subtitle: Real-time Data Analytics
     description: Interactive dashboard with live streaming data, predictive analytics, and automated insights.
@@ -13,6 +14,7 @@ featured:
     demo_url: https://example.com/ml-dashboard
     repo_url: https://github.com/hemanthnarayanaswamy/ml-dashboard
     image: /assets/img/projects/ml-dashboard.jpg
+    post_url: /projects/machine-learning-dashboard/
   - title: Mobile Fitness App
     subtitle: Cross-Platform Coaching
     description: React Native app that integrates with wearables, tracks workouts, and surfaces health insights.
@@ -20,21 +22,39 @@ featured:
     demo_url: https://example.com/fitness-app
     repo_url: https://github.com/hemanthnarayanaswamy/fitness-app
     image: /assets/img/projects/fitness-app.jpg
+    post_url: /projects/mobile-fitness-app/
 
 open_source:
-  - category: Popular Libraries
-    description: Contributions to React component libraries, Python data tooling, and DevOps automation scripts.
-  - category: Community Projects
-    description: Organizer and speaker at meetups, mentorship programs, and documentation initiatives.
-
-academic:
-  - category: Research & Development
-    description: AI-powered recommendations, blockchain prototypes, and computer vision applications from academic work.
-  - category: Hackathon Wins
-    description: Multiple accolades including AI Innovation Challenge 2023, FinTech Hackathon 2022, and sustainability awards.
+  - title: React Component Library
+    subtitle: UI/UX enhancements for open-source design systems
+    description: Added accessible components, dark-mode support, and Storybook docs adopted across the community.
+    technologies: [React, TypeScript, Storybook]
+    repo_url: https://github.com/hemanthnarayanaswamy/react-components
+    demo_url: https://example.com/react-components
+    image: /assets/img/projects/opensource-react.jpg
+    post_url: /projects/react-component-library/
+  - title: DevOps Automation Scripts
+    subtitle: Tooling for CI/CD and infrastructure
+    description: Terraform modules, GitHub Action workflows, and CLI utilities powering multi-cloud deployments.
+    technologies: [Terraform, GitHub Actions, Python]
+    repo_url: https://github.com/hemanthnarayanaswamy/devops-scripts
+    demo_url: https://example.com/devops-scripts
+    image: /assets/img/projects/opensource-devops.jpg
+    post_url: /projects/devops-automation-scripts/
 
 client:
-  - category: Enterprise Solutions
-    description: Banking modernization, healthcare data platforms, and real-time retail analytics for large organizations.
-  - category: Startup Collaborations
-    description: MVP builds, technical consulting, and team bootstrapping for early-stage startups.
+  - title: Banking System Modernization
+    subtitle: Enterprise microservices program
+    description: Led modernization of legacy banking apps, building API gateways, orchestration layers, and observability.
+    technologies: [Java, Spring Boot, Kafka, AWS]
+    demo_url: https://example.com/banking-modernization
+    image: /assets/img/projects/client-banking.jpg
+    post_url: /projects/banking-system-modernization/
+  - title: Startup MVP Accelerator
+    subtitle: Product launch for a SaaS startup
+    description: Delivered MVP in eight weeks, covering architecture, development, CI/CD, and production hardening.
+    technologies: [Next.js, Node.js, PostgreSQL, Docker]
+    repo_url: https://github.com/hemanthnarayanaswamy/startup-mvp
+    demo_url: https://example.com/startup-mvp
+    image: /assets/img/projects/client-startup.jpg
+    post_url: /projects/startup-mvp-accelerator/

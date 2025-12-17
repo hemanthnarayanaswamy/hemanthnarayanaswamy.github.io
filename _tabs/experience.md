@@ -1,7 +1,6 @@
 ---
-title: Experience
+title: Education & Experience
 icon: fas fa-briefcase
-order: 5
 ---
 
 {% assign experience_items = site.data.experience %}

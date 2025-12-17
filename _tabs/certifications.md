@@ -1,7 +1,6 @@
 ---
 title: Certifications
 icon: fas fa-certificate
-order: 3
 ---
 
 {% assign certifications = site.certifications | sort: 'date' | reverse %}

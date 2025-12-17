@@ -1,5 +1,7 @@
 ---
-# the default layout is 'page'
+layout: page
+title: About
+permalink: /
 icon: fas fa-user
 ---
 

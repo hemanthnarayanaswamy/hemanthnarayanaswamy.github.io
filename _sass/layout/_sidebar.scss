@@ -6,6 +6,28 @@
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
+$sidebar-btn-size: 1.75rem;
+
+%sidebar-icon-button {
+  width: $sidebar-btn-size;
+  height: $sidebar-btn-size;
+  margin-bottom: $btn-mb; // multi line gap
+  border-radius: 50%;
+  color: var(--sidebar-btn-color);
+  background-color: var(--sidebar-btn-bg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:focus-visible) {
+    box-shadow: var(--sidebar-border-color) 0 0 0 1px;
+  }
+
+  &:hover {
+    background-color: var(--sidebar-hover-bg);
+  }
+}
 
 #sidebar {
   @include mx.pl-pr(0);
@@ -91,6 +113,23 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       margin-top: 3.5rem;
       margin-bottom: 2.5rem;
       padding-left: 3.5rem;
+    }
+  }
+
+  .sidebar-top-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 1.25rem 0 1.25rem;
+
+    #mode-toggle {
+      @extend %sidebar-icon-button;
+      @extend %sidebar-links;
+      @extend %sidebar-link-hover;
+    }
+
+    i {
+      line-height: $sidebar-btn-size;
     }
   }
 
@@ -184,31 +223,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       margin-bottom: 1.75rem;
     }
 
-    $btn-size: 1.75rem;
-
-    %button {
-      width: $btn-size;
-      height: $btn-size;
-      margin-bottom: $btn-mb; // multi line gap
-      border-radius: 50%;
-      color: var(--sidebar-btn-color);
-      background-color: var(--sidebar-btn-bg);
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:not(:focus-visible) {
-        box-shadow: var(--sidebar-border-color) 0 0 0 1px;
-      }
-
-      &:hover {
-        background-color: var(--sidebar-hover-bg);
-      }
-    }
-
     a {
-      @extend %button;
+      @extend %sidebar-icon-button;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
@@ -222,29 +238,13 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     }
 
     i {
-      line-height: $btn-size;
+      line-height: $sidebar-btn-size;
     }
 
-    #mode-toggle {
-      @extend %button;
-      @extend %sidebar-links;
-      @extend %sidebar-link-hover;
-    }
-
-    .icon-border {
-      @extend %no-cursor;
-      @include mx.ml-mr(calc((v.$sb-btn-gap - $btn-border-width) / 2));
-
-      background-color: var(--sidebar-btn-color);
-      content: '';
-      width: $btn-border-width;
-      height: $btn-border-width;
-      border-radius: 50%;
-      margin-bottom: $btn-mb;
-
-      @include bp.xxxl {
-        @include mx.ml-mr(calc((v.$sb-btn-gap-lg - $btn-border-width) / 2));
-      }
+    .sidebar-contact-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      object-fit: contain;
     }
   } /* .sidebar-bottom */
 } /* #sidebar */

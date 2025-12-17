@@ -30,23 +30,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Hemanth Narayanaswamy" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements." />
 <meta property="og:description" content="Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="https://hemanthnarayanaswamy.github.io/" />
+<meta property="og:url" content="https://hemanthnarayanaswamy.github.io/" />
 <meta property="og:site_name" content="Hemanth Narayanaswamy" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Hemanth Narayanaswamy" />
+<meta property="twitter:title" content="About" />
 <meta name="twitter:site" content="@hemanthn" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.","headline":"Hemanth Narayanaswamy","name":"Hemanth Narayanaswamy","sameAs":["https://github.com/hemanthnarayanaswamy","https://linkedin.com/in/hemanthnarayanaswamy"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.","headline":"About","name":"Hemanth Narayanaswamy","sameAs":["https://github.com/hemanthnarayanaswamy","https://linkedin.com/in/hemanthnarayanaswamy"],"url":"https://hemanthnarayanaswamy.github.io/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Hemanth Narayanaswamy
+  <title>About | Hemanth Narayanaswamy
   </title>
 
   <!--
@@ -116,6 +116,9 @@
   
 
   
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+  
 
   <!-- Scripts -->
 
@@ -133,6 +136,9 @@
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -176,23 +182,9 @@
 
   
 
-  
-    
-
-    
-
-  
-
-  
-    
-
-    
-
-  
 
 
-
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 
 
 
@@ -200,7 +192,7 @@
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/page.min.js"></script>
 
 
 
@@ -219,6 +211,13 @@
     <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  
+    <div class="sidebar-top-actions">
+      <button type="button" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
+    </div>
+  
   <header class="profile-wrapper">
     <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/assets/img/profile.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
@@ -229,132 +228,169 @@
     
     <ul class="nav">
       
-        <li class="nav-item">
-          <a href="/about/" class="nav-link">
-            <i class="fa-fw fas fa-user"></i>
-            
-
-            <span>ABOUT</span>
-          </a>
-        </li>
-      
-      <!-- home -->
-      <li class="nav-item active">
-        <a href="/" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>HOME</span>
-        </a>
-      </li>
-      <!-- the real tabs -->
-      
+        
+        
         
           
+          
+          
+          <li class="nav-item active">
+            <a href="/about/" class="nav-link">
+              <i class="fa-fw fas fa-user"></i>
+              
+              <span>ABOUT</span>
+            </a>
+          </li>
         
-        <li class="nav-item">
-          <a href="/skills/" class="nav-link">
-            <i class="fa-fw fas fa-code"></i>
-            
-
-            <span>SKILLS</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
       
         
-        <li class="nav-item">
-          <a href="/certifications/" class="nav-link">
-            <i class="fa-fw fas fa-certificate"></i>
-            
-
-            <span>CERTIFICATIONS</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/experience/" class="nav-link">
+              <i class="fa-fw fas fa-briefcase"></i>
+              
+              <span>EDUCATION & EXPERIENCE</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/projects/" class="nav-link">
-            <i class="fa-fw fas fa-project-diagram"></i>
-            
-
-            <span>PROJECTS</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/certifications/" class="nav-link">
+              <i class="fa-fw fas fa-certificate"></i>
+              
+              <span>CERTIFICATIONS</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/experience/" class="nav-link">
-            <i class="fa-fw fas fa-briefcase"></i>
-            
-
-            <span>EXPERIENCE</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/projects/" class="nav-link">
+              <i class="fa-fw fas fa-project-diagram"></i>
+              
+              <span>PROJECTS</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/contact/" class="nav-link">
-            <i class="fa-fw fas fa-envelope"></i>
-            
-
-            <span>CONTACT</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/skills/" class="nav-link">
+              <i class="fa-fw fas fa-code"></i>
+              
+              <span>SKILLS</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/archives/" class="nav-link">
-            <i class="fa-fw fas fa-archive"></i>
-            
-
-            <span>ARCHIVES</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/blogs/" class="nav-link">
+              <i class="fa-fw fas fa-blog"></i>
+              
+              <span>BLOGS</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/categories/" class="nav-link">
-            <i class="fa-fw fas fa-stream"></i>
-            
-
-            <span>CATEGORIES</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/categories/" class="nav-link">
+              <i class="fa-fw fas fa-stream"></i>
+              
+              <span>CATEGORIES</span>
+            </a>
+          </li>
+        
       
         
-        <li class="nav-item">
-          <a href="/tags/" class="nav-link">
-            <i class="fa-fw fas fa-tags"></i>
-            
-
-            <span>TAGS</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/archives/" class="nav-link">
+              <i class="fa-fw fas fa-archive"></i>
+              
+              <span>ARCHIVES</span>
+            </a>
+          </li>
+        
+      
+        
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/contact/" class="nav-link">
+              <i class="fa-fw fas fa-envelope"></i>
+              
+              <span>CONTACT</span>
+            </a>
+          </li>
+        
+      
+        
+        
+        
+          
+          
+          
+          <li class="nav-item">
+            <a href="/tags/" class="nav-link">
+              <i class="fa-fw fas fa-tags"></i>
+              
+              <span>TAGS</span>
+            </a>
+          </li>
+        
       
     </ul>
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
-    
-
-    
       
 
       
+        
+        
+        
+        
+        
         <a
           href="https://github.com/hemanthnarayanaswamy"
           aria-label="github"
@@ -371,13 +407,20 @@
             rel="noopener noreferrer"
           
         >
-          <i class="fab fa-github"></i>
+          
+            <i class="fab fa-github"></i>
+          
         </a>
       
     
       
 
       
+        
+        
+        
+        
+        
         <a
           href="javascript:location.href = 'mailto:' + ['hemanth.narayanaswamy','example.com'].join('@')"
           aria-label="email"
@@ -389,13 +432,20 @@
 
           
         >
-          <i class="fas fa-envelope"></i>
+          
+            <i class="fas fa-envelope"></i>
+          
         </a>
       
     
       
 
       
+        
+        
+        
+        
+        
         <a
           href="https://www.linkedin.com/in/hemanthnarayanaswamy"
           aria-label="linkedin"
@@ -412,13 +462,20 @@
             rel="noopener noreferrer"
           
         >
-          <i class="fab fa-linkedin"></i>
+          
+            <i class="fab fa-linkedin"></i>
+          
         </a>
       
     
       
 
       
+        
+        
+        
+        
+        
         <a
           href="https://leetcode.com/hemanthnarayanaswamy"
           aria-label="leetcode"
@@ -435,7 +492,34 @@
             rel="noopener noreferrer"
           
         >
-          <i class="cib-leetcode"></i>
+          
+            <img src="/assets/img/icons/leetcode.svg" alt="leetcode icon" class="sidebar-contact-icon" loading="lazy">
+          
+        </a>
+      
+    
+      
+
+      
+        
+        
+        
+        
+        
+        <a
+          href="/blogs/"
+          aria-label="blogs"
+          
+
+          
+
+          
+
+          
+        >
+          
+            <i class="fas fa-blog"></i>
+          
         </a>
       
     
@@ -470,7 +554,7 @@
     </button>
 
     <div id="topbar-title">
-      Hemanth Narayanaswamy
+      About
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -524,92 +608,6 @@
 
 
 
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-
-    
-    
-
-    
-
-    
-      
-      
-
-      
-
-      <!-- add image placeholder -->
-      
-
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -625,10 +623,140 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -649,279 +777,62 @@
 
 
 
-
-
-
-
-
-<!-- Get pinned posts on current page -->
-
-
-
-
-
-
-<!-- Get normal posts on current page -->
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
+<article class="px-1">
   
-    <article class="card-wrapper card">
-      <a href="/posts/getting-started/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
+    
+    <h1 class="dynamic-title">
+      About
+    </h1>
+    <div class="content">
+      <h2 id="hello-im-hemanth-"><span class="me-2">Hello, I’m Hemanth! 👋</span><a href="#hello-im-hemanth-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-        
+<p>I’m a passionate <strong>Software Engineer</strong> and <strong>Technology Enthusiast</strong> based in Bangalore, India. With over 5 years of experience in software development, I specialize in building scalable web applications, implementing machine learning solutions, and leading technical teams.</p>
 
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Getting Started</h1>
+<h2 id="my-story"><span class="me-2">My Story</span><a href="#my-story" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-            <div class="card-text content mt-0 mb-3">
-              <p>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</p>
-            </div>
+<p>My journey in technology began during my undergraduate studies in Computer Science, where I discovered my passion for solving complex problems through code. Since then, I’ve worked across various domains—from startups to enterprise solutions—always pushing the boundaries of what’s possible with technology.</p>
 
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+<h2 id="what-i-do"><span class="me-2">What I Do</span><a href="#what-i-do" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="-full-stack-development"><span class="me-2">🚀 Full-Stack Development</span><a href="#-full-stack-development" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Building end-to-end solutions with modern stacks such as React, Node.js, and cloud-native platforms.</p>
+
+<h3 id="-machine-learning--ai"><span class="me-2">🤖 Machine Learning &amp; AI</span><a href="#-machine-learning--ai" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Designing data pipelines, training models, and deploying intelligent systems that unlock insights.</p>
+
+<h3 id="️-system-architecture"><span class="me-2">🏗️ System Architecture</span><a href="#️-system-architecture" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Creating resilient, observable systems using microservices, event-driven workflows, and container orchestration.</p>
+
+<h3 id="-team-leadership"><span class="me-2">👥 Team Leadership</span><a href="#-team-leadership" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Mentoring engineers, defining best practices, and shipping product increments through collaborative teams.</p>
+
+<h2 id="my-approach"><span class="me-2">My Approach</span><a href="#my-approach" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><strong>Quality First</strong> – maintainable code and thoughtful reviews.</li>
+  <li><strong>User-Centric</strong> – building features that solve real problems.</li>
+  <li><strong>Continuous Learning</strong> – experimenting with new tools and paradigms.</li>
+  <li><strong>Collaboration</strong> – partnering with product, design, and stakeholders.</li>
+</ul>
+
+<h2 id="beyond-code"><span class="me-2">Beyond Code</span><a href="#beyond-code" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li>📚 Reading about emerging tech trends.</li>
+  <li>🎯 Participating in hackathons and mentoring communities.</li>
+  <li>🌱 Contributing to open source and writing dev blogs.</li>
+  <li>🏃‍♂️ Staying active through fitness and outdoor activities.</li>
+</ul>
+
+<h2 id="lets-build-together"><span class="me-2">Let’s Build Together</span><a href="#lets-build-together" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>If you have an idea, a challenge, or just want to talk tech, feel free to reach out. I’m always open to new collaborations and opportunities!</p>
 
 
-
-
-<time
+    </div>
   
-  data-ts="1565355300"
-  data-df="ll"
-  
->
-  Aug  9, 2019
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Tutorial
-                  </span>
-                
-              </div>
-
-              
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span></span>
-                </div>
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/text-and-typography/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img "><img data-src="https://chirpy-img.netlify.app/commons/devices-mockup.png" alt="Responsive rendering of Chirpy theme on multiple devices." data-lqip="true" src="data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Text and Typography</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565235180"
-  data-df="ll"
-  
->
-  Aug  8, 2019
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Demo
-                  </span>
-                
-              </div>
-
-              
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span></span>
-                </div>
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/customize-the-favicon/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Customize the Favicon</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons...</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565454840"
-  data-df="ll"
-  
->
-  Aug 10, 2019
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Tutorial
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/write-a-new-post/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Writing a New Post</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and...</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565244600"
-  data-df="ll"
-  
->
-  Aug  8, 2019
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      Tutorial
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-</div>
-<!-- #post-list -->
-
-
+</article>
 
 
             
@@ -953,6 +864,27 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/projects/mobile-fitness-app/">Mobile Fitness App</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/projects/machine-learning-dashboard/">Machine Learning Dashboard</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/projects/e-commerce-platform/">E-Commerce Platform</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/customize-the-favicon/">Customize the Favicon</a>
         </li>
       
@@ -961,20 +893,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/getting-started/">Getting Started</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/write-a-new-post/">Writing a New Post</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">Text and Typography</a>
         </li>
       
     </ul>
@@ -1003,6 +921,75 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1046,6 +1033,261 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1083,16 +1325,34 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">React</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/d3-js/">D3.js</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/firebase/">Firebase</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/flask/">Flask</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/google-fit/">Google Fit</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/healthkit/">HealthKit</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ml/">ML</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/mongodb/">MongoDB</a>
       
     </div>
   </section>
@@ -1174,6 +1434,75 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1217,6 +1546,261 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1254,16 +1838,34 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">React</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/d3-js/">D3.js</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/firebase/">Firebase</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/flask/">Flask</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/google-fit/">Google Fit</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/healthkit/">HealthKit</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ml/">ML</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/mongodb/">MongoDB</a>
       
     </div>
   </section>

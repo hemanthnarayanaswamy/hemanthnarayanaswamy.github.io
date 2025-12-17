@@ -12,8 +12,13 @@
   url: "https://www.linkedin.com/in/hemanthnarayanaswamy"
 
 - type: leetcode
-  icon: "cib-leetcode"
+  icon_image: "/assets/img/icons/leetcode.svg"
   url: "https://leetcode.com/hemanthnarayanaswamy"
+
+- type: blogs
+  icon: "fas fa-blog"
+  url: "/blogs/"
+  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
