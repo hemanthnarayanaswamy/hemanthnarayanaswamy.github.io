@@ -50,19 +50,37 @@ This portfolio is built with:
 
 ## Getting Started
 
-To run this site locally:
+Minimal setup that works on Ubuntu:
 
-```bash
-# Install dependencies
-bundle install
-npm install
-
-# Build assets
-npm run build
-
-# Start local server
-bundle exec jekyll serve
-```
+1. Install system packages:
+   ```bash
+   sudo apt update
+   sudo apt install -y build-essential git curl \
+     zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt1-dev
+   ```
+2. Install Ruby 3.1.x + Bundler 2.6.9 (matches `Gemfile.lock`):
+   ```bash
+   curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
+   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+   echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
+   source ~/.bashrc
+   rbenv install 3.1.4
+   rbenv local 3.1.4
+   gem install bundler -v 2.6.9
+   ```
+3. Install Node.js 20 with nvm:
+   ```bash
+   curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+   source ~/.bashrc
+   nvm install 20 && nvm use 20
+   ```
+4. Install project dependencies and run the site:
+   ```bash
+   bundle _2.6.9_ install
+   npm install
+   npm run build
+   bundle exec jekyll serve --livereload
+   ```
 
 ## Contact
 
