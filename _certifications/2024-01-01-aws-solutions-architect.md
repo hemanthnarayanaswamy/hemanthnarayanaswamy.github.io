@@ -1,15 +1,16 @@
 ---
 title: Certified Kubernetes Administrator (CKA)
 description: Designing scalable architectures on AWS and learning through real-world labs and projects.
-date: 2025-11-21
+date: 2024-01-01
 issuer: The Linux Foundation
 credential_url: https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2024-01-01
 journey_summary: Focused 8-week study plan covering core AWS services, hands-on labs, and whitepaper deep dives.
 image:
   path: /assets/img/certifications/aws-solutions-architect.png
   alt: CKA
+permalink: /certifications/aws-solutions-architect/
 categories: [Certifications, Kubernetes, DevOps]
-tags: [Kubenetes, DevOps, Certification]
+tags: [Kubernetes, DevOps, Certification]
 pin: true
 timeline_highlights:
   - Hands-on labs covering cluster hardening, runtime security, and supply-chain scanning workflows.
