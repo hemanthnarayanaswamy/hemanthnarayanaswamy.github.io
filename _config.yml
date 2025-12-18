@@ -153,6 +153,10 @@ paginate_path: "/blogs/page:num/"
 # The base URL of your site
 baseurl: ""
 
+plugins:
+  - jekyll-paginate
+  - jekyll-include-cache
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
