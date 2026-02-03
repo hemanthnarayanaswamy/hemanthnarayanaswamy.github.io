@@ -1,5 +1,5 @@
 ---
-title: Education & Experience
+title: Work Experience
 icon: fas fa-briefcase
 ---
 
