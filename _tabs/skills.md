@@ -3,8 +3,12 @@ title: Skills
 icon: fas fa-code
 media_local: true
 refactor: false
+portfolio: true
+description: "A toolkit for building platforms, automating operations, and understanding production systems. Explore my coding profiles and the technologies I work with."
 ---
 
+<section class="portfolio-section" aria-labelledby="coding-profiles" data-reveal>
+  {% include portfolio-heading.html index='01' id='coding-profiles' title='Coding Profiles' description='Explore my code and problem-solving practice.' %}
 <div class="profile-previews" aria-label="Coding profiles">
   <a class="profile-preview profile-preview--leetcode" href="https://leetcode.com/u/hemanthhawk/" target="_blank" rel="noopener noreferrer">
     <div class="profile-preview__window" aria-hidden="true">
@@ -35,15 +39,22 @@ refactor: false
   </a>
 </div>
 
-<div class="row gy-4">
-  {% for group in site.data.skills %}
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-{{ group.title | slugify }}">
-        <div class="card-body">
-          <h2 id="skills-{{ group.title | slugify }}" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip>{{ group.title }}</h2>
-          {% include skill-chips.html items=group.items %}
-        </div>
+
+</section>
+<section class="portfolio-section" aria-labelledby="toolbox">
+  {% include portfolio-heading.html index='02' id='toolbox' title='My Toolbox' description='Tools I use across platforms, development, automation, and operations.' %}
+  <div class="portfolio-search" data-skill-search hidden>
+    <label for="skill-search"><i class="fas fa-search" aria-hidden="true"></i><span>Find a skill</span></label>
+    <input id="skill-search" type="search" placeholder="Try Kubernetes, Python, or cloud…" autocomplete="off" aria-controls="skill-groups" aria-describedby="skill-results">
+    <p id="skill-results" class="portfolio-results" data-skill-status aria-live="polite"></p>
+  </div>
+  <div class="portfolio-skill-grid" id="skill-groups">
+    {% for group in site.data.skills %}
+      <section class="skill-card" data-skill-group="{{ group.title | escape }}" aria-labelledby="skills-{{ group.title | slugify }}" data-reveal>
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">0{{ forloop.index }}</span><h3 id="skills-{{ group.title | slugify }}">{{ group.title }}</h3><span class="portfolio-count">{{ group.items.size }}</span></div>
+        {% include skill-chips.html items=group.items %}
       </section>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+  <p class="portfolio-empty" data-skill-empty hidden>No skills match that search. Try a tool name or category such as “Cloud”.</p>
+</section>

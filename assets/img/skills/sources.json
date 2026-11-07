@@ -235,5 +235,20 @@
     "path": "/assets/img/skills/argocd.svg",
     "bytes": 5261,
     "replaced": false
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/ubuntu/ubuntu-original.svg",
+    "path": "/assets/img/skills/ubuntu-original.svg",
+    "bytes": 1187
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redhat/redhat-original.svg",
+    "path": "/assets/img/skills/redhat-original.svg",
+    "bytes": 2624
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/splunk/splunk-original-wordmark.svg",
+    "path": "/assets/img/skills/splunk-original-wordmark.svg",
+    "bytes": 3407
   }
 ]

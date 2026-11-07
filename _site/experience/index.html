@@ -14,11 +14,11 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="dark">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
@@ -32,18 +32,18 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Work Experience" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements." />
-<meta property="og:description" content="Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements." />
+<meta name="description" content="Cloud platforms, reliable releases, and automation across engineering and business operations. Explore the work and the education behind it." />
+<meta property="og:description" content="Cloud platforms, reliable releases, and automation across engineering and business operations. Explore the work and the education behind it." />
 <link rel="canonical" href="http://localhost:4000/experience/" />
 <meta property="og:url" content="http://localhost:4000/experience/" />
 <meta property="og:site_name" content="Hemanth Narayanaswamy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-11-07T16:49:51+05:30" />
+<meta property="article:published_time" content="2026-11-08T00:16:02+05:30" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Work Experience" />
 <meta name="twitter:site" content="@hemanthn" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-07T16:49:51+05:30","datePublished":"2026-11-07T16:49:51+05:30","description":"Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.","headline":"Work Experience","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/experience/"},"url":"http://localhost:4000/experience/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-08T00:16:02+05:30","datePublished":"2026-11-08T00:16:02+05:30","description":"Cloud platforms, reliable releases, and automation across engineering and business operations. Explore the work and the education behind it.","headline":"Work Experience","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/experience/"},"url":"http://localhost:4000/experience/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,6 +204,12 @@
 <script defer src="/assets/js/dist/page.min.js"></script>
 
 
+  <script defer src="/assets/js/portfolio.js"></script>
+
+
+
+
+
 
 <!-- Pageviews -->
 
@@ -220,12 +226,6 @@
     <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
-  
-    <div class="sidebar-top-actions">
-      <button type="button" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-    </div>
   
   <header class="profile-wrapper">
     <a href="/" id="avatar">
@@ -393,11 +393,9 @@
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -423,15 +421,13 @@
       
     
       
+      
 
       
         
         
-        
-        
-        
         <a
-          href="javascript:location.href = 'mailto:' + ['hemanth.narayanaswamy','example.com'].join('@')"
+          href="mailto:hemanthnarayanswamy@gmail.com"
           aria-label="email"
           
 
@@ -448,11 +444,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -478,11 +472,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -508,11 +500,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -561,7 +551,9 @@
         
           
             
+            
               <span>Work Experience</span>
+            
             
 
           
@@ -575,7 +567,9 @@
     </button>
 
     <div id="topbar-title">
+      
       Work Experience
+      
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -605,7 +599,7 @@
 
 
 
-<article class="px-1">
+<article class="px-1 portfolio-page">
   
     
     
@@ -614,9 +608,25 @@
     </h1>
     <div class="content">
       
-<h2 id="professional-experience">Professional Experience</h2>
-
-<p class="text-muted">My work across cloud platforms, production reliability, and operations automation. Expand a role to explore the teams, projects, and results.</p>
+<nav class="portfolio-jump-nav" aria-label="Career sections">
+  <a href="#professional-experience">Experience <span aria-hidden="true">↘</span></a>
+  <a href="#education">Education <span aria-hidden="true">↘</span></a>
+</nav>
+<div class="portfolio-toolbar" data-timeline-controls="" hidden="">
+  <span class="portfolio-eyebrow">Explore each chapter</span>
+  <div class="portfolio-segments" role="group" aria-label="Timeline controls">
+    <button type="button" data-expand="true" aria-controls="experience-timeline education-timeline">Expand all</button>
+    <button type="button" data-expand="false" aria-controls="experience-timeline education-timeline">Collapse all</button>
+  </div>
+  <span class="portfolio-sr-only" data-timeline-status="" aria-live="polite"></span>
+</div>
+<section class="portfolio-section" aria-labelledby="professional-experience">
+<div class="portfolio-heading">
+  <span class="portfolio-index" aria-hidden="true">01 /</span>
+  <h2 id="professional-experience">Professional Experience</h2>
+  <span class="portfolio-count">4</span>
+</div>
+<p class="portfolio-section-intro">Expand a role to explore the teams, platforms, and results.</p>
 
 <div class="timeline-section" id="experience-timeline">
   <div class="timeline">
@@ -656,13 +666,13 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
           <div class="timeline-entry__logo">
-            <img src="/assets/img/organizations/promark.svg" alt="Promark Electronics logo" width="64" height="64" loading="lazy" decoding="async" />
+            <img src="/assets/img/organizations/promark-eci.svg" alt="ECI emblem for Promark Electronics" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
         <div class="timeline-entry__heading">
@@ -800,13 +810,13 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
           <div class="timeline-entry__logo">
-            <img src="/assets/img/organizations/zola.svg" alt="Zola logo" width="64" height="64" loading="lazy" decoding="async" />
+            <img src="/assets/img/organizations/zolo-blue.png" alt="Zolo wordmark" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
         <div class="timeline-entry__heading">
@@ -913,12 +923,12 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
-          <div class="timeline-entry__logo">
+          <div class="timeline-entry__logo timeline-entry__logo--flower">
             <img src="/assets/img/organizations/huawei-mark.png" alt="Huawei logo" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
@@ -1023,12 +1033,12 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
-          <div class="timeline-entry__logo">
+          <div class="timeline-entry__logo timeline-entry__logo--flower">
             <img src="/assets/img/organizations/huawei-mark.png" alt="Huawei logo" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
@@ -1085,9 +1095,15 @@
   </div>
 </div>
 
-<h2 id="education">Education</h2>
+</section>
+<section class="portfolio-section" aria-labelledby="education">
+<div class="portfolio-heading">
+  <span class="portfolio-index" aria-hidden="true">02 /</span>
+  <h2 id="education">Education</h2>
+  <span class="portfolio-count">2</span>
+</div>
+<p class="portfolio-section-intro">Engineering foundations, with related topics from the published program curricula.</p>
 
-<p class="text-muted">My engineering education, with related topics from the published program curricula.</p>
 
 <div class="timeline-section" id="education-timeline">
   <div class="timeline">
@@ -1118,13 +1134,13 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
-          <div class="timeline-entry__logo">
-            <img src="/assets/img/organizations/concordia-mark.png" alt="Concordia University logo" width="64" height="64" loading="lazy" decoding="async" />
+          <div class="timeline-entry__logo timeline-entry__logo--wordmark timeline-entry__logo--light">
+            <img src="/assets/img/organizations/concordia-university.png" alt="Concordia University logo" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
         <div class="timeline-entry__heading">
@@ -1202,12 +1218,12 @@
 
 
 
-<details class="timeline-entry">
+<details class="timeline-entry" data-reveal="">
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         
-          <div class="timeline-entry__logo timeline-entry__logo--emblem">
+          <div class="timeline-entry__logo timeline-entry__logo--emblem timeline-entry__logo--light">
             <img src="/assets/img/organizations/bangalore-institute-of-technology.png" alt="Bangalore Institute of Technology emblem" width="64" height="64" loading="lazy" decoding="async" />
           </div>
         
@@ -1262,6 +1278,8 @@
     
   </div>
 </div>
+
+</section>
 
     </div>
   

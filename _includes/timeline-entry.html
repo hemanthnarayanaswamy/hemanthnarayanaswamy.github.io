@@ -26,12 +26,12 @@
   {% assign image_value = item[image_field] %}
 {% endif %}
 
-<details class="timeline-entry" {% if include.open %}open{% endif %}>
+<details class="timeline-entry" data-reveal {% if include.open %}open{% endif %}>
   <summary>
     <div class="timeline-entry__header">
       <div class="timeline-entry__identity">
         {% if item.logo %}
-          <div class="timeline-entry__logo{% if item.logo.fit == 'emblem' %} timeline-entry__logo--emblem{% endif %}">
+          <div class="timeline-entry__logo{% if item.logo.fit == 'emblem' %} timeline-entry__logo--emblem{% elsif item.logo.fit == 'wordmark' %} timeline-entry__logo--wordmark{% elsif item.logo.fit == 'flower' %} timeline-entry__logo--flower{% endif %}{% if item.logo.surface == 'light' %} timeline-entry__logo--light{% endif %}">
             <img src="{{ item.logo.path | relative_url }}" alt="{{ item.logo.alt | escape }}" width="64" height="64" loading="lazy" decoding="async">
           </div>
         {% endif %}

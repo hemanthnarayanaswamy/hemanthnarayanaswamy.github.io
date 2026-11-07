@@ -64,6 +64,14 @@
 
 <script defer src="{{ script | relative_url }}"></script>
 
+{% if page.portfolio %}
+  <script defer src="{{ '/assets/js/portfolio.js' | relative_url }}"></script>
+{% endif %}
+
+{% if page.contact_form %}
+  <script defer src="{{ '/assets/js/contact-form.js' | relative_url }}"></script>
+{% endif %}
+
 {% if page.math %}
   <!-- MathJax -->
   <script src="{{ '/assets/js/data/mathjax.js' | relative_url }}"></script>

@@ -1,6 +1,6 @@
 <div class="skill-pills skill-pills--5">
   {% for skill in include.items %}
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="{{ skill.name | escape }}">
       <span class="skill-pill__icon"><img src="{{ skill.icon | relative_url }}" alt="" loading="lazy" decoding="async" width="40" height="40"></span>
       <span class="skill-pill__label">{{ skill.name | escape }}</span>
     </div>

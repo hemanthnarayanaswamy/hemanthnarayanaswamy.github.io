@@ -20,12 +20,8 @@
       icon: /assets/img/skills/ansible-original.svg
     - name: "GitHub Actions"
       icon: /assets/img/skills/githubactions-original.svg
-    - name: "Jenkins"
-      icon: /assets/img/skills/jenkins-original.svg
     - name: "ArgoCD"
       icon: /assets/img/skills/argocd.svg
-    - name: "Helm"
-      icon: /assets/img/skills/helm-plain.svg
 - title: "Containers & Orchestration"
   items:
     - name: "Docker"
@@ -34,12 +30,8 @@
       icon: /assets/img/skills/kubernetes-plain.svg
     - name: "Helm"
       icon: /assets/img/skills/helm-plain.svg
-    - name: "OpenShift"
-      icon: /assets/img/skills/openshift-original.svg
 - title: "Databases & Storage"
   items:
-    - name: "PostgreSQL"
-      icon: /assets/img/skills/postgresql-original.svg
     - name: "MySQL"
       icon: /assets/img/skills/mysql-original.svg
     - name: "MongoDB"
@@ -54,12 +46,8 @@
       icon: /assets/img/skills/github-original.svg
     - name: "GitLab"
       icon: /assets/img/skills/gitlab-original.svg
-    - name: "Bitbucket"
-      icon: /assets/img/skills/bitbucket-original.svg
 - title: "Automation & Quality"
   items:
-    - name: "Cypress"
-      icon: /assets/img/skills/cypressio-plain.svg
     - name: "Selenium"
       icon: /assets/img/skills/selenium-original.svg
     - name: "Jest"
@@ -72,15 +60,15 @@
       icon: /assets/img/skills/prometheus-original.svg
     - name: "Grafana"
       icon: /assets/img/skills/grafana-original.svg
-    - name: "Elastic"
-      icon: /assets/img/skills/elasticsearch-original.svg
+    - name: "Splunk"
+      icon: /assets/img/skills/splunk-original-wordmark.svg
     - name: "Datadog"
       icon: /assets/img/skills/datadog-original.svg
-- title: "Operating Systems"
+- title: "OS Distro"
   items:
     - name: "Linux"
       icon: /assets/img/skills/linux-original.svg
-    - name: "macOS"
-      icon: /assets/img/skills/apple-original.svg
-    - name: "Windows"
-      icon: /assets/img/skills/windows8-original.svg
+    - name: "Ubuntu"
+      icon: /assets/img/skills/ubuntu-original.svg
+    - name: "Red Hat Linux"
+      icon: /assets/img/skills/redhat-original.svg

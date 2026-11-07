@@ -14,11 +14,11 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="dark">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
@@ -42,7 +42,7 @@
 <meta property="twitter:title" content="About" />
 <meta name="twitter:site" content="@hemanthn" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.","headline":"About","name":"Hemanth Narayanaswamy","sameAs":["https://github.com/hemanthnarayanaswamy","https://linkedin.com/in/hemanthnarayanaswamy"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.","headline":"About","name":"Hemanth Narayanaswamy","sameAs":["https://github.com/hemanthnarayanaswamy","https://www.linkedin.com/in/hemanth2204/"],"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -197,6 +197,10 @@
 
 
 
+
+
+
+
 <!-- Pageviews -->
 
 
@@ -212,12 +216,6 @@
     <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
-  
-    <div class="sidebar-top-actions">
-      <button type="button" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-    </div>
   
   <header class="profile-wrapper">
     <a href="/" id="avatar">
@@ -385,11 +383,9 @@
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -415,15 +411,13 @@
       
     
       
+      
 
       
         
         
-        
-        
-        
         <a
-          href="javascript:location.href = 'mailto:' + ['hemanth.narayanaswamy','example.com'].join('@')"
+          href="mailto:hemanthnarayanswamy@gmail.com"
           aria-label="email"
           
 
@@ -440,11 +434,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -470,11 +462,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -500,11 +490,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -555,7 +543,7 @@
     </button>
 
     <div id="topbar-title">
-      About
+      
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -581,269 +569,7 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              <!-- Refactor the HTML structure -->
-
-
-
-<!--
-  In order to allow a wide table to scroll horizontally,
-  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
--->
-
-
-
-<!--
-  Fixed kramdown code highlight rendering:
-  https://github.com/penibelst/jekyll-compress-html/issues/101
-  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
--->
-
-
-
-<!-- Change the icon of checkbox -->
-
-
-
-<!-- Handle images -->
-
-
-
-
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
-
-<!-- Add header for code snippets -->
-
-
-
-<!-- Create heading anchors -->
-
-
-
-
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-
-
-
-
-<!-- return -->
-
+              
 
 
 
@@ -851,58 +577,106 @@
   
     
     
-    <h1 class="dynamic-title">
+    <h1 class="dynamic-title page-title--hidden">
       About
     </h1>
     <div class="content">
-      <h2 class="about-greeting" data-toc-skip="">
-  <a href="https://readme-typing-svg.herokuapp.com/?font=Righteous&amp;size=35&amp;center=true&amp;vCenter=true&amp;width=500&amp;height=70&amp;duration=2500&amp;pause=700&amp;lines=Hi+There!+%F0%9F%91%8B;+I'm+Hemanth+Narayanaswamy!;" class="popup img-link shimmer"><img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&amp;size=35&amp;center=true&amp;vCenter=true&amp;width=500&amp;height=70&amp;duration=2500&amp;pause=700&amp;lines=Hi+There!+%F0%9F%91%8B;+I'm+Hemanth+Narayanaswamy!;" width="500" height="70" alt="Hi there! 👋 I'm Hemanth Narayanaswamy!" loading="lazy"></a>
-</h2>
+      <div class="about-portfolio" data-about="">
+  <section class="about-hero" aria-label="Introduction">
+    <div class="about-greeting" data-toc-skip="">
+      <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&amp;color=EEEEEE&amp;size=28&amp;vCenter=true&amp;width=540&amp;height=55&amp;duration=2500&amp;pause=700&amp;lines=Hi+There!+%F0%9F%91%8B;+I'm+Hemanth+Narayanaswamy!;" width="540" height="55" alt="Hi there! 👋 I'm Hemanth Narayanaswamy!" />
+      <span class="about-greeting__static">Hi there! I'm Hemanth Narayanaswamy.</span>
+    </div>
+    <p class="about-hero__intro">I'm a <strong>DevOps and Platform Developer</strong> based in <strong>Canada</strong>, with about 5+ years of experience turning manual processes into reliable infrastructure. I help teams ship confidently, scale smoothly, and recover quickly.</p>
+    <div class="about-hero__footer">
+      <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Montreal, Canada</span>
+      <div class="about-hero__actions">
+        <a class="about-button" href="/contact/">Get in touch <span aria-hidden="true">↗</span></a>
+        <a class="about-button" href="/projects/">Explore my projects <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="about-workflow" aria-label="My engineering workflow">
+      <span><i class="fas fa-search" aria-hidden="true"></i> Investigate</span>
+      <span class="about-workflow__arrow" aria-hidden="true">→</span>
+      <span><i class="fas fa-code" aria-hidden="true"></i> Automate</span>
+      <span class="about-workflow__arrow" aria-hidden="true">→</span>
+      <span><i class="fas fa-chart-line" aria-hidden="true"></i> Observe</span>
+      <span class="about-workflow__arrow" aria-hidden="true">→</span>
+      <span><i class="fas fa-sync-alt" aria-hidden="true"></i> Improve</span>
+    </div>
+  </section>
 
-<p>I’m a <strong>DevOps and Cloud Engineer</strong> based in <strong>Montreal</strong>, with about <strong>six years of experience</strong> helping teams build, deploy, and operate reliable systems. I turn manual processes into automated infrastructure so teams can ship confidently, scale smoothly, and recover quickly.</p>
+  <section class="about-section" aria-labelledby="my-story" data-reveal="">
+    <div class="about-section__heading"><span class="about-index" aria-hidden="true">01 /</span><h2 id="my-story">My Story</h2></div>
+    <div class="about-story">
+      <div class="about-story__copy">
+        <p>My work connects <strong>platform engineering, site reliability, and automation</strong> across Linux-based cloud and on-premises systems. I build on AWS and Google Cloud with Kubernetes, Terraform, and CI/CD. Python is at the core of my automation toolkit, alongside SQL and experience building production ML training pipelines.</p>
+        <p>I enjoy following logs, connecting metrics, and digging into system behavior until I understand what's going wrong. Then I look for ways to automate the fix, reduce downtime, and make the next incident easier to diagnose.</p>
+      </div>
+      <aside class="about-personal">
+        <span class="about-eyebrow">Beyond the terminal</span>
+        <p>Anime enthusiast. Always up for a new cloud or tooling certification challenge.</p>
+        <div class="about-personal__fact"><i class="fas fa-keyboard" aria-hidden="true"></i><p><strong>All 10 fingers.</strong><br />That's how I type.</p></div>
+      </aside>
+    </div>
+  </section>
 
-<h2 id="my-story"><span class="me-2">My Story</span><a href="#my-story" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <section class="about-section" aria-labelledby="what-i-do" data-reveal="">
+    <div class="about-section__heading"><span class="about-index" aria-hidden="true">02 /</span><h2 id="what-i-do">What I Do</h2></div>
+    <p class="about-section__intro">From provisioning the first environment to keeping production healthy.</p>
+    <div class="about-focus" data-focus="">
+      <div class="about-focus__tabs" aria-label="Engineering focus areas" hidden="">
+        <button type="button" id="focus-tab-cloud" aria-controls="focus-cloud"><i class="fas fa-cloud" aria-hidden="true"></i> Cloud &amp; Infrastructure <span aria-hidden="true">↗</span></button>
+        <button type="button" id="focus-tab-platform" aria-controls="focus-platform"><i class="fas fa-cubes" aria-hidden="true"></i> Kubernetes &amp; MLOps <span aria-hidden="true">↗</span></button>
+        <button type="button" id="focus-tab-delivery" aria-controls="focus-delivery"><i class="fas fa-shield-alt" aria-hidden="true"></i> Delivery &amp; Reliability <span aria-hidden="true">↗</span></button>
+        <button type="button" id="focus-tab-automation" aria-controls="focus-automation"><i class="fas fa-terminal" aria-hidden="true"></i> Operations &amp; Automation <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="about-focus__panels">
+        <article class="about-focus__panel" id="focus-cloud">
+          <span class="about-eyebrow">Provision / Standardize / Scale</span>
+          <h3>Cloud Infrastructure &amp; Automation</h3>
+          <p>Design scalable environments on <strong>AWS and Google Cloud</strong> with infrastructure as code. Build reusable modules and consistent configurations for provisioning, networking, access control, and environment management.</p>
+          <ul class="about-toolkit" aria-label="Cloud tools"><li>AWS</li><li>GCP</li><li>Terraform</li><li>Linux</li></ul>
+        </article>
+        <article class="about-focus__panel" id="focus-platform">
+          <span class="about-eyebrow">Containerize / Orchestrate / Train</span>
+          <h3>Kubernetes, AI &amp; MLOps</h3>
+          <p>Build containerized platforms with <strong>Docker and Kubernetes</strong>, and support AI/MLOps workflows for model training, deployment, and lifecycle management. Use GitOps and workflow automation to keep workloads repeatable and scalable.</p>
+          <ul class="about-toolkit" aria-label="Platform tools"><li>Kubernetes</li><li>Docker</li><li>GitOps</li><li>AI / MLOps</li></ul>
+        </article>
+        <article class="about-focus__panel" id="focus-delivery">
+          <span class="about-eyebrow">Test / Release / Observe</span>
+          <h3>Secure Delivery &amp; Production Reliability</h3>
+          <p>Build <strong>CI/CD pipelines</strong> with automated testing, security checks, and secure authentication. Use staged rollouts, blue/green deployments, monitoring, and alerting to support safe releases and reliable production systems.</p>
+          <ul class="about-toolkit" aria-label="Delivery tools"><li>GitHub Actions</li><li>Prometheus</li><li>Grafana</li><li>Security scanning</li></ul>
+        </article>
+        <article class="about-focus__panel" id="focus-automation">
+          <span class="about-eyebrow">Connect / Simplify / Repeat</span>
+          <h3>Operations &amp; Business Automation</h3>
+          <p>Automate Linux administration, server provisioning, and recurring tasks with <strong>Python, Bash, and Ansible</strong>. Connect business systems, streamline data workflows, and turn repetitive operations into maintainable automation.</p>
+          <ul class="about-toolkit" aria-label="Automation tools"><li>Python</li><li>Bash</li><li>Ansible</li><li>SQL</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<p>My work brings together <strong>platform engineering, site reliability, and automation</strong> across Linux-based cloud and on-premises systems. I build on <strong>AWS and Google Cloud</strong>, using Kubernetes, Terraform, and CI/CD to make infrastructure easier to operate and scale. Python is a core part of my automation toolkit, alongside SQL, and my experience includes building ML training pipelines for production environments.</p>
+  <section class="about-section" aria-labelledby="my-approach" data-reveal="">
+    <div class="about-section__heading"><span class="about-index" aria-hidden="true">03 /</span><h2 id="my-approach">My Approach</h2></div>
+    <ol class="about-principles">
+      <li><i class="fas fa-terminal" aria-hidden="true"></i><h3>Automate the repeatable</h3><p>Replace fragile manual steps with consistent, reusable workflows.</p></li>
+      <li><i class="fas fa-wave-square" aria-hidden="true"></i><h3>Make systems observable</h3><p>Give teams the visibility to detect issues early and understand failures.</p></li>
+      <li><i class="fas fa-lock" aria-hidden="true"></i><h3>Build security in</h3><p>Make secure authentication and automated checks part of everyday delivery.</p></li>
+      <li><i class="fas fa-arrow-up" aria-hidden="true"></i><h3>Keep learning</h3><p>Pick up the languages, frameworks, and tools that solve the next problem.</p></li>
+    </ol>
+  </section>
 
-<p>I enjoy the investigative side of engineering: following logs, connecting metrics, and digging into system behavior until I understand what’s going wrong. From there, I look for ways to automate the fix, reduce downtime, and make the next incident easier to diagnose. I’m always learning and exploring better ways to design and run infrastructure.</p>
-
-<p>Outside of work, I enjoy <strong>anime</strong> and taking on new <strong>cloud and tooling certification challenges</strong>.</p>
-
-<p><strong>Fun fact:</strong> I type with all 10 fingers.</p>
-
-<h2 id="what-i-do"><span class="me-2">What I Do</span><a href="#what-i-do" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<h3 id="️-cloud-infrastructure--automation"><span class="me-2">☁️ Cloud Infrastructure &amp; Automation</span><a href="#️-cloud-infrastructure--automation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Build reusable Terraform modules and cloud environments that make growth repeatable. At Promark, this reduced new-customer onboarding from <strong>one to two days to a few hours</strong>.</p>
-
-<h3 id="️-kubernetes--ml-platforms"><span class="me-2">⚙️ Kubernetes &amp; ML Platforms</span><a href="#️-kubernetes--ml-platforms" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Create infrastructure for model training and deployment. I moved YOLO training from a single on-premises GPU server to a <strong>GitOps-managed GKE platform that scales to zero</strong>, cutting dataset-to-model time from <strong>six hours to two</strong>.</p>
-
-<h3 id="-secure-delivery--production-reliability"><span class="me-2">🚀 Secure Delivery &amp; Production Reliability</span><a href="#-secure-delivery--production-reliability" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Build CI/CD pipelines with keyless authentication and automated security scanning. My work also includes <strong>blue/green releases for 50–70 on-premises inspection stations</strong>, bringing repeatable deployments to the factory floor.</p>
-
-<h3 id="-operations--business-automation"><span class="me-2">🔧 Operations &amp; Business Automation</span><a href="#-operations--business-automation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Automate Linux server provisioning, connect ERP systems, and deliver reporting that finance and operations teams rely on. I look for ways to reduce repetitive work across both engineering and business workflows.</p>
-
-<h2 id="my-approach"><span class="me-2">My Approach</span><a href="#my-approach" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ul>
-  <li><strong>Automate the Repeatable</strong> – replace fragile manual steps with consistent, reusable workflows.</li>
-  <li><strong>Make Systems Observable</strong> – give teams the visibility to detect issues early and understand failures.</li>
-  <li><strong>Build Security In</strong> – make secure authentication and automated checks part of everyday delivery.</li>
-  <li><strong>Keep Learning</strong> – pick up the languages, frameworks, and tools that help solve the next problem.</li>
-</ul>
-
-<h2 id="lets-build-together"><span class="me-2">Let’s Build Together</span><a href="#lets-build-together" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>I’m a <strong>Canadian Permanent Resident</strong> based in Montreal. If you’re building a cloud platform, improving production reliability, or tackling a process worth automating, <a href="/contact/">let’s connect</a>.</p>
+</div>
+<script defer="" src="/assets/js/about.js"></script>
 
 
     </div>
   
 </article>
-
 
             
           </main>

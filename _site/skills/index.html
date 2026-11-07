@@ -14,11 +14,11 @@
 
 
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html lang="en" data-mode="dark">
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
@@ -32,18 +32,18 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Skills" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="leetcode.com/u/hemanthhawk LeetCode hemanthhawk Explore my problem-solving profile LeetCode@hemanthhawk View profile github.com/hemanthnarayanaswamy GitHub@hemanthnarayanaswamy View profile" />
-<meta property="og:description" content="leetcode.com/u/hemanthhawk LeetCode hemanthhawk Explore my problem-solving profile LeetCode@hemanthhawk View profile github.com/hemanthnarayanaswamy GitHub@hemanthnarayanaswamy View profile" />
+<meta name="description" content="A toolkit for building platforms, automating operations, and understanding production systems. Explore my coding profiles and the technologies I work with." />
+<meta property="og:description" content="A toolkit for building platforms, automating operations, and understanding production systems. Explore my coding profiles and the technologies I work with." />
 <link rel="canonical" href="http://localhost:4000/skills/" />
 <meta property="og:url" content="http://localhost:4000/skills/" />
 <meta property="og:site_name" content="Hemanth Narayanaswamy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-11-07T16:49:51+05:30" />
+<meta property="article:published_time" content="2026-11-08T00:16:02+05:30" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Skills" />
 <meta name="twitter:site" content="@hemanthn" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-07T16:49:51+05:30","datePublished":"2026-11-07T16:49:51+05:30","description":"leetcode.com/u/hemanthhawk LeetCode hemanthhawk Explore my problem-solving profile LeetCode@hemanthhawk View profile github.com/hemanthnarayanaswamy GitHub@hemanthnarayanaswamy View profile","headline":"Skills","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/skills/"},"url":"http://localhost:4000/skills/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-08T00:16:02+05:30","datePublished":"2026-11-08T00:16:02+05:30","description":"A toolkit for building platforms, automating operations, and understanding production systems. Explore my coding profiles and the technologies I work with.","headline":"Skills","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/skills/"},"url":"http://localhost:4000/skills/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,6 +204,12 @@
 <script defer src="/assets/js/dist/page.min.js"></script>
 
 
+  <script defer src="/assets/js/portfolio.js"></script>
+
+
+
+
+
 
 <!-- Pageviews -->
 
@@ -220,12 +226,6 @@
     <!-- The Side Bar -->
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
-  
-    <div class="sidebar-top-actions">
-      <button type="button" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
-    </div>
   
   <header class="profile-wrapper">
     <a href="/" id="avatar">
@@ -393,11 +393,9 @@
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -423,15 +421,13 @@
       
     
       
+      
 
       
         
         
-        
-        
-        
         <a
-          href="javascript:location.href = 'mailto:' + ['hemanth.narayanaswamy','example.com'].join('@')"
+          href="mailto:hemanthnarayanswamy@gmail.com"
           aria-label="email"
           
 
@@ -448,11 +444,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -478,11 +472,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -508,11 +500,9 @@
       
     
       
+      
 
       
-        
-        
-        
         
         
         <a
@@ -561,7 +551,9 @@
         
           
             
+            
               <span>Skills</span>
+            
             
 
           
@@ -575,7 +567,9 @@
     </button>
 
     <div id="topbar-title">
+      
       Skills
+      
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -605,7 +599,7 @@
 
 
 
-<article class="px-1">
+<article class="px-1 portfolio-page">
   
     
     
@@ -613,7 +607,15 @@
       Skills
     </h1>
     <div class="content">
-      <div class="profile-previews" aria-label="Coding profiles">
+      <section class="portfolio-section" aria-labelledby="coding-profiles" data-reveal="">
+  <div class="portfolio-heading">
+  <span class="portfolio-index" aria-hidden="true">01 /</span>
+  <h2 id="coding-profiles">Coding Profiles</h2>
+  
+</div>
+<p class="portfolio-section-intro">Explore my code and problem-solving practice.</p>
+
+<div class="profile-previews" aria-label="Coding profiles">
   <a class="profile-preview profile-preview--leetcode" href="https://leetcode.com/u/hemanthhawk/" target="_blank" rel="noopener noreferrer">
     <div class="profile-preview__window" aria-hidden="true">
       <span></span><span></span><span></span>
@@ -643,287 +645,238 @@
   </a>
 </div>
 
-<div class="row gy-4">
+
+</section>
+<section class="portfolio-section" aria-labelledby="toolbox">
+  <div class="portfolio-heading">
+  <span class="portfolio-index" aria-hidden="true">02 /</span>
+  <h2 id="toolbox">My Toolbox</h2>
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-cloud-platforms">
-        <div class="card-body">
-          <h2 id="skills-cloud-platforms" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Cloud Platforms</h2>
-          <div class="skill-pills skill-pills--5">
+</div>
+<p class="portfolio-section-intro">Tools I use across platforms, development, automation, and operations.</p>
+
+  <div class="portfolio-search" data-skill-search="" hidden="">
+    <label for="skill-search"><i class="fas fa-search" aria-hidden="true"></i><span>Find a skill</span></label>
+    <input id="skill-search" type="search" placeholder="Try Kubernetes, Python, or cloud…" autocomplete="off" aria-controls="skill-groups" aria-describedby="skill-results" />
+    <p id="skill-results" class="portfolio-results" data-skill-status="" aria-live="polite"></p>
+  </div>
+  <div class="portfolio-skill-grid" id="skill-groups">
+    
+      <section class="skill-card" data-skill-group="Cloud Platforms" aria-labelledby="skills-cloud-platforms" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">01</span><h3 id="skills-cloud-platforms">Cloud Platforms</h3><span class="portfolio-count">2</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Google Cloud">
       <span class="skill-pill__icon"><img src="/assets/img/skills/googlecloud-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Google Cloud</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="AWS">
       <span class="skill-pill__icon"><img src="/assets/img/skills/amazonwebservices-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">AWS</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Programming Languages" aria-labelledby="skills-programming-languages" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">02</span><h3 id="skills-programming-languages">Programming Languages</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-programming-languages">
-        <div class="card-body">
-          <h2 id="skills-programming-languages" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Programming Languages</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Python">
       <span class="skill-pill__icon"><img src="/assets/img/skills/python-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Python</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Bash">
       <span class="skill-pill__icon"><img src="/assets/img/skills/bash-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Bash</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Go">
       <span class="skill-pill__icon"><img src="/assets/img/skills/go-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Go</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Ops Tools" aria-labelledby="skills-ops-tools" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">03</span><h3 id="skills-ops-tools">Ops Tools</h3><span class="portfolio-count">4</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-ops-tools">
-        <div class="card-body">
-          <h2 id="skills-ops-tools" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Ops Tools</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Terraform">
       <span class="skill-pill__icon"><img src="/assets/img/skills/terraform-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Terraform</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Ansible">
       <span class="skill-pill__icon"><img src="/assets/img/skills/ansible-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Ansible</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="GitHub Actions">
       <span class="skill-pill__icon"><img src="/assets/img/skills/githubactions-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">GitHub Actions</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/jenkins-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Jenkins</span>
-    </div>
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="ArgoCD">
       <span class="skill-pill__icon"><img src="/assets/img/skills/argocd.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">ArgoCD</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/helm-plain.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Helm</span>
-    </div>
-  
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Containers &amp; Orchestration" aria-labelledby="skills-containers-orchestration" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">04</span><h3 id="skills-containers-orchestration">Containers &amp; Orchestration</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-containers-orchestration">
-        <div class="card-body">
-          <h2 id="skills-containers-orchestration" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Containers &amp; Orchestration</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Docker">
       <span class="skill-pill__icon"><img src="/assets/img/skills/docker-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Docker</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Kubernetes">
       <span class="skill-pill__icon"><img src="/assets/img/skills/kubernetes-plain.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Kubernetes</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Helm">
       <span class="skill-pill__icon"><img src="/assets/img/skills/helm-plain.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Helm</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/openshift-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">OpenShift</span>
-    </div>
-  
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Databases &amp; Storage" aria-labelledby="skills-databases-storage" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">05</span><h3 id="skills-databases-storage">Databases &amp; Storage</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-databases-storage">
-        <div class="card-body">
-          <h2 id="skills-databases-storage" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Databases &amp; Storage</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/postgresql-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">PostgreSQL</span>
-    </div>
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="MySQL">
       <span class="skill-pill__icon"><img src="/assets/img/skills/mysql-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">MySQL</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="MongoDB">
       <span class="skill-pill__icon"><img src="/assets/img/skills/mongodb-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">MongoDB</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Redis">
       <span class="skill-pill__icon"><img src="/assets/img/skills/redis-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Redis</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Source Control" aria-labelledby="skills-source-control" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">06</span><h3 id="skills-source-control">Source Control</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-source-control">
-        <div class="card-body">
-          <h2 id="skills-source-control" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Source Control</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Git">
       <span class="skill-pill__icon"><img src="/assets/img/skills/git-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Git</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="GitHub">
       <span class="skill-pill__icon"><img src="/assets/img/skills/github-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">GitHub</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="GitLab">
       <span class="skill-pill__icon"><img src="/assets/img/skills/gitlab-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">GitLab</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/bitbucket-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Bitbucket</span>
-    </div>
-  
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Automation &amp; Quality" aria-labelledby="skills-automation-quality" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">07</span><h3 id="skills-automation-quality">Automation &amp; Quality</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-automation-quality">
-        <div class="card-body">
-          <h2 id="skills-automation-quality" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Automation &amp; Quality</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/cypressio-plain.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Cypress</span>
-    </div>
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Selenium">
       <span class="skill-pill__icon"><img src="/assets/img/skills/selenium-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Selenium</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Jest">
       <span class="skill-pill__icon"><img src="/assets/img/skills/jest-plain.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Jest</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="SonarQube">
       <span class="skill-pill__icon"><img src="/assets/img/skills/sonarqube-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">SonarQube</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="Monitoring &amp; Logging" aria-labelledby="skills-monitoring-logging" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">08</span><h3 id="skills-monitoring-logging">Monitoring &amp; Logging</h3><span class="portfolio-count">4</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-monitoring-logging">
-        <div class="card-body">
-          <h2 id="skills-monitoring-logging" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Monitoring &amp; Logging</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Prometheus">
       <span class="skill-pill__icon"><img src="/assets/img/skills/prometheus-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Prometheus</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Grafana">
       <span class="skill-pill__icon"><img src="/assets/img/skills/grafana-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Grafana</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/elasticsearch-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Elastic</span>
+    <div class="skill-pill text-center" data-skill="Splunk">
+      <span class="skill-pill__icon"><img src="/assets/img/skills/splunk-original-wordmark.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
+      <span class="skill-pill__label">Splunk</span>
     </div>
   
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Datadog">
       <span class="skill-pill__icon"><img src="/assets/img/skills/datadog-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Datadog</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
+    
+      <section class="skill-card" data-skill-group="OS Distro" aria-labelledby="skills-os-distro" data-reveal="">
+        <div class="skill-card__heading"><span class="portfolio-index" aria-hidden="true">09</span><h3 id="skills-os-distro">OS Distro</h3><span class="portfolio-count">3</span></div>
+        <div class="skill-pills skill-pills--5">
   
-    <div class="col-12">
-      <section class="skill-card card shadow-sm h-100" aria-labelledby="skills-operating-systems">
-        <div class="card-body">
-          <h2 id="skills-operating-systems" class="text-uppercase text-muted fw-semibold mb-2 small" data-toc-skip="">Operating Systems</h2>
-          <div class="skill-pills skill-pills--5">
-  
-    <div class="skill-pill text-center">
+    <div class="skill-pill text-center" data-skill="Linux">
       <span class="skill-pill__icon"><img src="/assets/img/skills/linux-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
       <span class="skill-pill__label">Linux</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/apple-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">macOS</span>
+    <div class="skill-pill text-center" data-skill="Ubuntu">
+      <span class="skill-pill__icon"><img src="/assets/img/skills/ubuntu-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
+      <span class="skill-pill__label">Ubuntu</span>
     </div>
   
-    <div class="skill-pill text-center">
-      <span class="skill-pill__icon"><img src="/assets/img/skills/windows8-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
-      <span class="skill-pill__label">Windows</span>
+    <div class="skill-pill text-center" data-skill="Red Hat Linux">
+      <span class="skill-pill__icon"><img src="/assets/img/skills/redhat-original.svg" alt="" loading="lazy" decoding="async" width="40" height="40" /></span>
+      <span class="skill-pill__label">Red Hat Linux</span>
     </div>
   
 </div>
 
-        </div>
       </section>
-    </div>
-  
-</div>
+    
+  </div>
+  <p class="portfolio-empty" data-skill-empty="" hidden="">No skills match that search. Try a tool name or category such as “Cloud”.</p>
+</section>
 
     </div>
   

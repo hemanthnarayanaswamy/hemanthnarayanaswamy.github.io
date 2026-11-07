@@ -1,0 +1,6 @@
+<div class="portfolio-heading">
+  <span class="portfolio-index" aria-hidden="true">{{ include.index }} /</span>
+  <h2 id="{{ include.id }}">{{ include.title | escape }}</h2>
+  {% if include.count %}<span class="portfolio-count">{{ include.count }}</span>{% endif %}
+</div>
+{% if include.description %}<p class="portfolio-section-intro">{{ include.description | escape }}</p>{% endif %}

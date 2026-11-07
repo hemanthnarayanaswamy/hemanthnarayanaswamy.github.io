@@ -3,15 +3,28 @@ title: Work Experience
 icon: fas fa-briefcase
 media_local: true
 refactor: false
+portfolio: true
+description: "Cloud platforms, reliable releases, and automation across engineering and business operations. Explore the work and the education behind it."
 ---
 
 {% assign experience_items = site.data.experience %}
 {% assign education_items = site.data.education %}
 
-## Professional Experience
 
-<p class="text-muted">My work across cloud platforms, production reliability, and operations automation. Expand a role to explore the teams, projects, and results.</p>
-
+<nav class="portfolio-jump-nav" aria-label="Career sections">
+  <a href="#professional-experience">Experience <span aria-hidden="true">↘</span></a>
+  <a href="#education">Education <span aria-hidden="true">↘</span></a>
+</nav>
+<div class="portfolio-toolbar" data-timeline-controls hidden>
+  <span class="portfolio-eyebrow">Explore each chapter</span>
+  <div class="portfolio-segments" role="group" aria-label="Timeline controls">
+    <button type="button" data-expand="true" aria-controls="experience-timeline education-timeline">Expand all</button>
+    <button type="button" data-expand="false" aria-controls="experience-timeline education-timeline">Collapse all</button>
+  </div>
+  <span class="portfolio-sr-only" data-timeline-status aria-live="polite"></span>
+</div>
+<section class="portfolio-section" aria-labelledby="professional-experience">
+{% include portfolio-heading.html index='01' id='professional-experience' title='Professional Experience' description='Expand a role to explore the teams, platforms, and results.' count=experience_items.size %}
 <div class="timeline-section" id="experience-timeline">
   <div class="timeline">
     {% for item in experience_items %}
@@ -46,9 +59,9 @@ refactor: false
   </div>
 </div>
 
-## Education
-
-<p class="text-muted">My engineering education, with related topics from the published program curricula.</p>
+</section>
+<section class="portfolio-section" aria-labelledby="education">
+{% include portfolio-heading.html index='02' id='education' title='Education' description='Engineering foundations, with related topics from the published program curricula.' count=education_items.size %}
 
 <div class="timeline-section" id="education-timeline">
   <div class="timeline">
@@ -57,3 +70,5 @@ refactor: false
     {% endfor %}
   </div>
 </div>
+
+</section>

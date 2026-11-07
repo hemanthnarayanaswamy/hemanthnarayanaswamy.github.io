@@ -1,0 +1,9 @@
+<header class="portfolio-hero">
+  <div class="portfolio-hero__top">
+    <span class="portfolio-eyebrow">{{ include.hero.eyebrow | escape }}</span>
+    <span class="portfolio-hero__icon" aria-hidden="true"><i class="{{ include.hero.icon | default: 'fas fa-terminal' }}"></i></span>
+  </div>
+  <h2 class="portfolio-hero__title" data-toc-skip>{{ include.hero.headline | escape }}</h2>
+  <p>{{ include.hero.description | escape }}</p>
+  {% if include.hero.note %}<div class="portfolio-hero__note"><span aria-hidden="true">↳</span> {{ include.hero.note | escape }}</div>{% endif %}
+</header>

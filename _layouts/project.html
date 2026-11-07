@@ -7,8 +7,8 @@ panel_includes:
 {% assign project_items = site.data.projects.featured | concat: site.data.projects.production | concat: site.data.projects.academic %}
 {% assign project = project_items | where: 'id', page.project_id | first %}
 
-<article class="px-1 project-overview" data-toc="true">
-  <header>
+<article class="px-1 portfolio-page project-overview" data-toc="true">
+  <header class="portfolio-detail-header">
     <p class="mb-3"><a href="{{ '/projects/' | relative_url }}">All Projects</a></p>
     <div class="project-card__eyebrow mb-3">
       <span class="project-status{% if project.status == 'Completed' %} project-status--completed{% elsif project.status == 'Academic reference' %} project-status--reference{% endif %}">{{ project.status }}</span>

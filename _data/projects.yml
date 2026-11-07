@@ -5,7 +5,6 @@ featured:
     status: "Completed"
     category: "AI SRE"
     description: "An autonomous AI SRE platform focused on root-cause analysis across microservices, connecting incident context with production troubleshooting."
-    highlights: ["Root-cause investigation across service boundaries.","AI-assisted context for SRE workflows."]
     focus: ["AIOps","Microservices","Root-Cause Analysis","SRE"]
     post_url: "/projects/rca-platform/"
     image: "/assets/img/projects/rca-platform.svg"
@@ -15,7 +14,6 @@ featured:
     status: "Completed"
     category: "Enterprise RAG"
     description: "A retrieval-augmented platform for exploring SAP database tables and column information through natural-language questions."
-    highlights: ["Natural-language discovery of SAP table and column metadata.","Schema context for developers, analysts, and integration work."]
     focus: ["LLMOps","RAG","SAP","SQL Metadata"]
     post_url: "/projects/sap-schema-rag/"
     image: "/assets/img/projects/sap-schema-rag.svg"
@@ -26,7 +24,6 @@ production:
     status: "Production case study"
     category: "Cloud & MLOps"
     description: "Moved YOLO training from a single on-premises GPU server to a GitOps-managed GKE platform, using queued Spot GPU jobs and scale-to-zero capacity."
-    highlights: ["Reduced dataset-to-model time from six hours to two.","Scheduled training with Argo Workflows and Kueue on NVIDIA L4 Spot pools."]
     technologies: ["GKE","Argo Workflows","Kueue","GitOps","Spot GPUs"]
     metric: "6h → 2h"
     metric_label: "Dataset-to-model time"
@@ -38,7 +35,6 @@ production:
     status: "Production case study"
     category: "CI/CD & Edge"
     description: "Replaced manual SSH/tmux releases with automated delivery across 50–70 factory inspection stations, preserving live Socket.IO sessions during deployments."
-    highlights: ["GitHub Actions self-hosted runners and Docker Compose for repeatable releases.","NGINX blue/green switching with WebSocket-aware sticky routing."]
     technologies: ["GitHub Actions","Docker Compose","NGINX","Socket.IO"]
     metric: "50–70"
     metric_label: "Inspection stations"
@@ -51,7 +47,6 @@ academic:
     status: "Academic reference"
     category: "Embedded & IoT"
     description: "A Concordia ECE capstone example using wearable sensors and wireless telemetry to monitor first responders. Included as academic inspiration."
-    highlights: ["Connected sensing, wireless communication, and a monitoring backend.","Original project: Concordia ECE Group 2022-13, supervised by R. Coutinho."]
     technologies: ["Embedded Systems","IoT","Bluetooth","LoRa","Telemetry"]
     source_url: "https://users.encs.concordia.ca/~eceweb/capstone/projectshow.php?id=560"
     source_label: "Concordia source"

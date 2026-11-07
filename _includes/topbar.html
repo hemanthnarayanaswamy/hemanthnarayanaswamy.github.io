@@ -22,11 +22,13 @@
             </span>
 
           {% elsif forloop.last %}
+            {% unless page.hide_title %}
             {% if page.collection == 'tabs' %}
               <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
             {% else %}
               <span>{{ page.title }}</span>
             {% endif %}
+            {% endunless %}
 
           {% elsif page.layout == 'category' or page.layout == 'tag' %}
             <span>
@@ -45,6 +47,7 @@
     </button>
 
     <div id="topbar-title">
+      {% unless page.hide_title %}
       {% if page.layout == 'home' %}
         {{- site.data.locales[include.lang].title | default: site.title -}}
       {% elsif page.collection == 'tabs' or page.layout == 'page' %}
@@ -53,6 +56,7 @@
       {% else %}
         {{- site.data.locales[include.lang].layout[page.layout] | default: page.layout | capitalize -}}
       {% endif %}
+      {% endunless %}
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">

@@ -65,32 +65,29 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% for entry in site.data.contact %}
+      {% assign url = entry.url %}
+      {% unless url %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
         {% when 'email' %}
-          {% assign email = site.social.email | split: '@' %}
-          {%- capture url -%}
-            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
-          {%- endcapture -%}
+          {% assign url = site.social.email | prepend: 'mailto:' %}
         {% when 'rss' %}
           {% assign url = '/feed.xml' | relative_url %}
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
+      {% endunless %}
 
       {% if url %}
         {% assign resolved_url = url %}
-        {% assign has_protocol = resolved_url contains '://' %}
-        {% assign is_mailto = resolved_url contains 'mailto:' %}
-        {% assign is_js = resolved_url contains 'javascript:' %}
-        {% unless has_protocol or is_mailto or is_js %}
+        {% unless resolved_url contains '://' or resolved_url contains 'mailto:' %}
           {% assign resolved_url = resolved_url | relative_url %}
         {% endunless %}
         <a
-          href="{{ resolved_url }}"
+          href="{{ resolved_url | escape }}"
           aria-label="{{ entry.type }}"
           {% assign link_types = '' %}
 

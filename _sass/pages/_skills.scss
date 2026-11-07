@@ -95,14 +95,14 @@
     height: 7px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: #f07878;
+    background: #999999;
 
     &:nth-child(2) {
-      background: #e4b34f;
+      background: #777777;
     }
 
     &:nth-child(3) {
-      background: #6abf85;
+      background: #555555;
     }
   }
 }
@@ -133,13 +133,16 @@
   gap: 0.35rem;
   aspect-ratio: 1440 / 1000;
   padding: 1.25rem;
-  background: linear-gradient(140deg, #fff4dc, #fff);
-  color: #313131;
+  background: linear-gradient(140deg, #242424, #141414);
+  color: #eeeeee;
 
   img {
     width: 64px;
     height: 64px;
     margin-bottom: 0.35rem;
+    padding: 8px;
+    border-radius: 12px;
+    background: #dddddd;
   }
 }
 

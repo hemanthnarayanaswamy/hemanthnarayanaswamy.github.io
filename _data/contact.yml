@@ -2,9 +2,11 @@
 
 - type: github
   icon: "fab fa-github"
+  url: "https://github.com/hemanthnarayanaswamy"
 
 - type: email
   icon: "fas fa-envelope"
+  url: "mailto:hemanthnarayanswamy@gmail.com"
   noblank: true # open link in current tab
 
 - type: linkedin

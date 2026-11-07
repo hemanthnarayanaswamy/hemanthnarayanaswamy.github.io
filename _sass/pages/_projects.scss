@@ -1,5 +1,15 @@
 @use '../abstracts/variables' as v;
 
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.5rem;
+
+  &__item {
+    min-width: 0;
+  }
+}
+
 .project-card {
   overflow: hidden;
   border: 1px solid var(--btn-border-color);
@@ -7,25 +17,27 @@
   background: var(--card-bg);
   color: var(--text-color);
 
-  &__visual {
-    display: flex;
-    align-items: center;
-    background: #0b1324;
-  }
-
   &__art-link {
     display: block;
+    flex-shrink: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   &__image {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
     object-fit: contain;
   }
 
   &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     min-width: 0;
     padding: 1.5rem;
   }
@@ -34,9 +46,8 @@
     font-size: 0.9rem;
   }
 
-  &__highlights {
-    padding-left: 1.15rem;
-    font-size: 0.9rem;
+  &__actions {
+    margin-top: auto;
   }
 
   &__eyebrow {
@@ -104,13 +115,13 @@
   font-weight: 700;
 
   &--completed {
-    border-color: #39996b;
-    background: rgb(57 153 107 / 10%);
+    border-color: #777777;
+    background: #292929;
     color: var(--text-color);
   }
 
   &--reference {
-    background: rgb(157 99 121 / 10%);
+    background: #242424;
     color: var(--text-muted-color);
   }
 }
@@ -119,7 +130,7 @@
   margin: 1.5rem 0;
   overflow: hidden;
   border-radius: v.$radius-lg;
-  background: #0b1324;
+  background: #101010;
 
   img {
     display: block;

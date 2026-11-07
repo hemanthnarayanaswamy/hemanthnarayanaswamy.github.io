@@ -1,8 +1,8 @@
 - role: DevOps Developer
   company: Promark Electronics · Montreal, QC
   logo:
-    path: /assets/img/organizations/promark.svg
-    alt: Promark Electronics logo
+    path: /assets/img/organizations/promark-eci.svg
+    alt: ECI emblem for Promark Electronics
   start: 2023-05-01
   end: 2026-10-01
   summary: >-
@@ -92,8 +92,8 @@
 - role: Infrastructure Support Specialist
   company: Zola · Montreal, QC
   logo:
-    path: /assets/img/organizations/zola.svg
-    alt: Zola logo
+    path: /assets/img/organizations/zolo-blue.png
+    alt: Zolo wordmark
   start: 2022-09-01
   end: 2023-04-01
   summary: >-
@@ -136,6 +136,7 @@
   logo:
     path: /assets/img/organizations/huawei-mark.png
     alt: Huawei logo
+    fit: flower
   start: 2020-06-01
   end: 2021-06-01
   summary: >-
@@ -174,6 +175,7 @@
   logo:
     path: /assets/img/organizations/huawei-mark.png
     alt: Huawei logo
+    fit: flower
   start: 2020-03-01
   end: 2020-06-01
   summary: >-

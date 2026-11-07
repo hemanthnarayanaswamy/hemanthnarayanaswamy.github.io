@@ -35,6 +35,9 @@ refactor: true
   {% assign posts = filtered_posts %}
 {% endif %}
 
+<div class="portfolio-page portfolio-blog">
+  <h1 class="dynamic-title">{{ page.title | escape }}</h1>
+  <nav class="portfolio-jump-nav" aria-label="Browse articles"><a href="{{ '/categories/' | relative_url }}">By topic <span aria-hidden="true">↗</span></a><a href="{{ '/archives/' | relative_url }}">By date <span aria-hidden="true">↗</span></a></nav>
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">
@@ -63,7 +66,7 @@ refactor: true
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+            <h2 class="card-title my-2 mt-md-0" data-toc-skip>{{ post.title }}</h2>
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-description.html %}</p>
@@ -95,3 +98,5 @@ refactor: true
 {% if paginator and paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+
+</div>
