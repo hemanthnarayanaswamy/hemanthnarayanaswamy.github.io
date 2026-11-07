@@ -5,6 +5,7 @@ media_local: true
 refactor: false
 portfolio: true
 description: "A toolkit for building platforms, automating operations, and understanding production systems. Explore my coding profiles and the technologies I work with."
+hide_title: true
 ---
 
 <section class="portfolio-section" aria-labelledby="coding-profiles" data-reveal>

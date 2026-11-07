@@ -5,6 +5,7 @@ media_local: true
 refactor: false
 portfolio: true
 description: "Cloud platforms, reliable releases, and automation across engineering and business operations. Explore the work and the education behind it."
+hide_title: true
 ---
 
 {% assign experience_items = site.data.experience %}
@@ -24,7 +25,7 @@ description: "Cloud platforms, reliable releases, and automation across engineer
   <span class="portfolio-sr-only" data-timeline-status aria-live="polite"></span>
 </div>
 <section class="portfolio-section" aria-labelledby="professional-experience">
-{% include portfolio-heading.html index='01' id='professional-experience' title='Professional Experience' description='Expand a role to explore the teams, platforms, and results.' count=experience_items.size %}
+{% include portfolio-heading.html index='01' id='professional-experience' title='Professional Experience' count=experience_items.size %}
 <div class="timeline-section" id="experience-timeline">
   <div class="timeline">
     {% for item in experience_items %}
@@ -61,7 +62,7 @@ description: "Cloud platforms, reliable releases, and automation across engineer
 
 </section>
 <section class="portfolio-section" aria-labelledby="education">
-{% include portfolio-heading.html index='02' id='education' title='Education' description='Engineering foundations, with related topics from the published program curricula.' count=education_items.size %}
+{% include portfolio-heading.html index='02' id='education' title='Education' count=education_items.size %}
 
 <div class="timeline-section" id="education-timeline">
   <div class="timeline">

@@ -6,11 +6,13 @@
 
 - type: email
   icon: "fas fa-envelope"
+  icon_image: "/assets/img/icons/gmail.png"
   url: "mailto:hemanthnarayanswamy@gmail.com"
   noblank: true # open link in current tab
 
 - type: linkedin
   icon: "fab fa-linkedin"
+  icon_image: "/assets/img/icons/linkedin-original.svg"
   url: "https://www.linkedin.com/in/hemanth2204/"
 
 - type: leetcode

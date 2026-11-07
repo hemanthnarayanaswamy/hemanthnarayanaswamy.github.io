@@ -36,7 +36,7 @@ refactor: true
 {% endif %}
 
 <div class="portfolio-page portfolio-blog">
-  <h1 class="dynamic-title">{{ page.title | escape }}</h1>
+  <h1 class="dynamic-title{% if page.hide_title %} page-title--hidden{% endif %}">{{ page.title | escape }}</h1>
   <nav class="portfolio-jump-nav" aria-label="Browse articles"><a href="{{ '/categories/' | relative_url }}">By topic <span aria-hidden="true">↗</span></a><a href="{{ '/archives/' | relative_url }}">By date <span aria-hidden="true">↗</span></a></nav>
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}

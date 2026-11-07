@@ -1,7 +1,7 @@
 <div class="about-portfolio" data-about>
   <section class="about-hero" aria-label="Introduction">
     <div class="about-greeting" data-toc-skip>
-      <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&amp;color=EEEEEE&amp;size=28&amp;vCenter=true&amp;width=540&amp;height=55&amp;duration=2500&amp;pause=700&amp;lines=Hi+There!+%F0%9F%91%8B;+I'm+Hemanth+Narayanaswamy!;" width="540" height="55" alt="Hi there! 👋 I'm Hemanth Narayanaswamy!">
+      <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&amp;color=E2EAE5&amp;size=28&amp;vCenter=true&amp;width=540&amp;height=55&amp;duration=2500&amp;pause=700&amp;lines=Hi+There!+%F0%9F%91%8B;+I'm+Hemanth+Narayanaswamy!;" width="540" height="55" alt="Hi there! 👋 I'm Hemanth Narayanaswamy!">
       <span class="about-greeting__static">Hi there! I'm Hemanth Narayanaswamy.</span>
     </div>
     <p class="about-hero__intro">I'm a <strong>DevOps and Platform Developer</strong> based in <strong>Canada</strong>, with about 5+ years of experience turning manual processes into reliable infrastructure. I help teams ship confidently, scale smoothly, and recover quickly.</p>
@@ -11,15 +11,6 @@
         <a class="about-button" href="{{ '/contact/' | relative_url }}">Get in touch <span aria-hidden="true">↗</span></a>
         <a class="about-button" href="{{ '/projects/' | relative_url }}">Explore my projects <span aria-hidden="true">↗</span></a>
       </div>
-    </div>
-    <div class="about-workflow" aria-label="My engineering workflow">
-      <span><i class="fas fa-search" aria-hidden="true"></i> Investigate</span>
-      <span class="about-workflow__arrow" aria-hidden="true">→</span>
-      <span><i class="fas fa-code" aria-hidden="true"></i> Automate</span>
-      <span class="about-workflow__arrow" aria-hidden="true">→</span>
-      <span><i class="fas fa-chart-line" aria-hidden="true"></i> Observe</span>
-      <span class="about-workflow__arrow" aria-hidden="true">→</span>
-      <span><i class="fas fa-sync-alt" aria-hidden="true"></i> Improve</span>
     </div>
   </section>
 

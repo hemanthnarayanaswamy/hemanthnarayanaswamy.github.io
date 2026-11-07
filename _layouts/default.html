@@ -16,7 +16,7 @@ layout: compress
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
-  <body>
+  <body{% unless site.panda_mascot == false %} class="has-panda"{% endunless %}>
     {% include sidebar.html lang=lang %}
 
     <div id="main-wrapper" class="d-flex justify-content-center">
@@ -84,5 +84,6 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+    {% unless site.panda_mascot == false %}{% include panda-mascot.html %}{% endunless %}
   </body>
 </html>

@@ -5,6 +5,7 @@ portfolio: true
 contact_form: true
 refactor: false
 description: "Have a cloud platform to build, a production problem to solve, or a process worth automating? I’d love to hear from you."
+hide_title: true
 ---
 
 <section class="portfolio-section" aria-labelledby="send-a-message">
@@ -21,7 +22,7 @@ description: "Have a cloud platform to build, a production problem to solve, or 
         <div class="contact-form__field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></div>
       </div>
       <div class="contact-form__field"><label for="contact-subject">Subject</label><input id="contact-subject" name="subject" type="text" maxlength="160" placeholder="What would you like to discuss?" required></div>
-      <div class="contact-form__field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="6" maxlength="5000" placeholder="Tell me a little about your project or question…" required></textarea></div>
+      <div class="contact-form__field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="4" maxlength="5000" placeholder="Tell me a little about your project or question…" required></textarea></div>
     </fieldset>
     <div class="contact-form__footer"><span>All fields are required. Sent via <a href="https://formsubmit.co/" target="_blank" rel="noopener noreferrer">FormSubmit</a>.</span><button class="portfolio-button" type="submit"><span data-send-label>Send message</span><i class="far fa-paper-plane" aria-hidden="true"></i></button></div>
     <p class="contact-form__status" id="contact-form-status" data-form-status role="status" aria-live="polite" tabindex="-1"></p>
@@ -29,15 +30,10 @@ description: "Have a cloud platform to build, a production problem to solve, or 
 </section>
 <section class="portfolio-section" aria-labelledby="get-in-touch">
   {% include portfolio-heading.html index='02' id='get-in-touch' title='Get In Touch' %}
-  <div class="contact-email" data-reveal>
-    <span class="portfolio-eyebrow">The best place to start</span>
-    <a class="contact-email__link" href="mailto:hemanthnarayanswamy@gmail.com"><i class="far fa-envelope" aria-hidden="true"></i><span>hemanthnarayanswamy@gmail.com</span><span aria-hidden="true">↗</span></a>
-    <div class="contact-email__footer"><span>For opportunities, projects, or a quick hello.</span><button class="portfolio-button" type="button" data-copy-email="hemanthnarayanswamy@gmail.com" hidden><i class="far fa-copy" aria-hidden="true"></i> Copy email</button></div>
-    <p class="contact-copy-status" data-copy-status role="status"></p>
-  </div>
   <div class="contact-links">
-    <a class="contact-link" href="https://www.linkedin.com/in/hemanth2204/" target="_blank" rel="noopener noreferrer" data-reveal><i class="fab fa-linkedin-in" aria-hidden="true"></i><span><strong>LinkedIn</strong><small>Professional connections</small></span><span aria-hidden="true">↗</span></a>
-    <a class="contact-link" href="https://github.com/hemanthnarayanaswamy" target="_blank" rel="noopener noreferrer" data-reveal><i class="fab fa-github" aria-hidden="true"></i><span><strong>GitHub</strong><small>Code, projects, and ideas</small></span><span aria-hidden="true">↗</span></a>
+    <a class="contact-link" href="mailto:hemanthnarayanswamy@gmail.com" data-reveal><i class="far fa-envelope" aria-hidden="true"></i><span><strong>Email</strong><small>hemanthnarayanswamy@gmail.com</small></span><span aria-hidden="true">↗</span></a>
+    <a class="contact-link" href="https://www.linkedin.com/in/hemanth2204/" target="_blank" rel="noopener noreferrer" data-reveal><i class="fab fa-linkedin-in" aria-hidden="true"></i><span><strong>LinkedIn</strong><small>@hemanth2204</small></span><span aria-hidden="true">↗</span></a>
+    <a class="contact-link" href="https://github.com/hemanthnarayanaswamy" target="_blank" rel="noopener noreferrer" data-reveal><i class="fab fa-github" aria-hidden="true"></i><span><strong>GitHub</strong><small>Code & projects</small></span><span aria-hidden="true">↗</span></a>
     <a class="contact-link" href="https://twitter.com/hemanthn" target="_blank" rel="noopener noreferrer" data-reveal><i class="fab fa-x-twitter" aria-hidden="true"></i><span><strong>Twitter / X</strong><small>@hemanthn</small></span><span aria-hidden="true">↗</span></a>
   </div>
 </section>

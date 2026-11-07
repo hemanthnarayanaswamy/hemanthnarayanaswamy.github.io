@@ -5,6 +5,7 @@ media_local: true
 portfolio: true
 refactor: false
 description: "From Linux fundamentals to cloud architecture, DevOps, security, AI, and Kubernetes. Each milestone connects learning with practical engineering."
+hide_title: true
 ---
 
 {% assign certifications = site.certifications | where_exp: 'cert', 'cert.published != false' | sort: 'date' | reverse %}

@@ -124,6 +124,10 @@ $sidebar-btn-size: 1.75rem;
     letter-spacing: -0.02em;
     color: var(--site-title-color);
 
+    > span:last-child {
+      color: var(--accent-text, var(--site-title-color));
+    }
+
     &:hover {
       color: var(--sidebar-active-color);
     }
@@ -240,12 +244,13 @@ $sidebar-btn-size: 1.75rem;
 
   .sidebar-bottom {
     flex-shrink: 0;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin-bottom: 1.5rem;
 
     @include bp.xxxl {
-      padding-left: 2.75rem;
       margin-bottom: 1.75rem;
     }
 
@@ -254,23 +259,26 @@ $sidebar-btn-size: 1.75rem;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
-      &:not(:last-child) {
-        margin-right: v.$sb-btn-gap;
+      flex: 0 0 2rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0;
+      color: #c9c9c9;
 
-        @include bp.xxxl {
-          margin-right: v.$sb-btn-gap-lg;
-        }
-      }
+      &:hover, &:focus-visible { color: #f4f4f4; }
     }
 
     i {
-      line-height: $sidebar-btn-size;
+      font-size: 1.1rem;
+      line-height: 1;
     }
 
     .sidebar-contact-icon {
       width: 1.25rem;
       height: 1.25rem;
       object-fit: contain;
+      filter: grayscale(1) brightness(1.4);
+      opacity: 1;
     }
   } /* .sidebar-bottom */
 

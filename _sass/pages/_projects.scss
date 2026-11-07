@@ -115,9 +115,9 @@
   font-weight: 700;
 
   &--completed {
-    border-color: #777777;
-    background: #292929;
-    color: var(--text-color);
+    border-color: var(--accent-border);
+    background: var(--accent-soft);
+    color: var(--accent-text);
   }
 
   &--reference {

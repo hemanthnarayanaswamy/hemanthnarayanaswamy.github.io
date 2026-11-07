@@ -3,7 +3,7 @@
   transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 
   &:focus-within {
-    border-color: #b5b5b5;
+    border-color: var(--accent-color);
     box-shadow: 0 8px 25px rgb(0 0 0 / 30%);
   }
 }
@@ -11,15 +11,15 @@
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover, .skill-card:hover, .timeline-entry:hover {
     transform: translateY(-4px);
-    border-color: #999;
+    border-color: var(--accent-color);
     box-shadow: 0 12px 30px rgb(0 0 0 / 35%);
   }
 
   .skill-pill__icon { transition: transform 200ms ease, box-shadow 200ms ease; }
-  .skill-pill:hover .skill-pill__icon { transform: translateY(-4px) scale(1.05); box-shadow: 0 5px 20px rgb(255 255 255 / 12%); }
+  .skill-pill:hover .skill-pill__icon { transform: translateY(-4px) scale(1.05); box-shadow: 0 0 0 2px var(--accent-color), 0 5px 20px var(--accent-glow); }
 }
 
-.timeline-entry > summary:focus-visible { outline: 2px solid #eee; outline-offset: 6px; border-radius: 4px; }
+.timeline-entry > summary:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 6px; border-radius: 4px; }
 .content a.profile-preview:focus-visible { transform: translateY(-3px); }
 
 @media (prefers-reduced-motion: reduce) {

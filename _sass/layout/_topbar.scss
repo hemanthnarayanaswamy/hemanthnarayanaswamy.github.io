@@ -17,11 +17,7 @@
 #topbar {
   @extend %btn-color;
 
-  #breadcrumb {
-    font-size: 1rem;
-    color: var(--text-muted-color);
-    padding-left: 0.5rem;
-
+  #breadcrumb, #topbar-title {
     a:hover {
       @extend %link-hover;
     }
@@ -29,11 +25,18 @@
     span {
       &:not(:last-child) {
         &::after {
-          content: '›';
-          padding: 0 0.3rem;
+          content: '>';
+          padding: 0 0.4rem;
+          color: var(--text-muted-color);
         }
       }
     }
+  }
+
+  #breadcrumb {
+    font-size: 1rem;
+    color: var(--text-muted-color);
+    padding-left: 0.5rem;
 
     @include bp.lt(bp.get(lg)) {
       display: none;
@@ -59,13 +62,15 @@
 
 #topbar-title {
   display: none;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   font-family: sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
-  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   @include bp.lt(bp.get(lg)) {
     display: block;

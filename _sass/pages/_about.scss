@@ -10,7 +10,7 @@
   .about-eyebrow {
     display: block;
     margin-bottom: 1rem;
-    color: #bdbdbd;
+    color: var(--accent-text);
     font: 600 0.68rem/1.7 monospace;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
     position: relative;
     overflow: hidden;
     padding: clamp(1.4rem, 4vw, 2.5rem);
-    border: 1px solid #525252;
+    border: 1px solid var(--accent-border);
     border-radius: 20px;
     background: radial-gradient(ellipse at top right, #303030 0, #171717 60%);
     box-shadow: 0 20px 45px rgb(0 0 0 / 20%);
@@ -32,7 +32,7 @@
     min-height: 45px;
 
     img { display: block; width: min(100%, 540px); height: auto; margin: 0; }
-    &__static { display: none; color: #eee; font-weight: 600; }
+    &__static { display: none; color: var(--accent-text); font-weight: 600; }
   }
 
   .about-hero__intro { max-width: 62ch; color: #d3d3d3; }
@@ -57,33 +57,24 @@
     gap: 1.3rem;
     min-height: 44px;
     padding: 0.65rem 1rem;
-    border: 1px solid #888;
+    border: 1px solid var(--accent-color);
     border-radius: 9px;
-    background: #eee;
-    color: #121212;
+    background: var(--accent-color);
+    color: var(--accent-ink);
     font-size: 0.85rem;
     font-weight: 700;
     text-decoration: none;
     transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
 
     span { transition: transform 180ms ease; }
-    &:hover { background: #fff; color: #000; transform: translateY(-2px); box-shadow: 0 5px 20px rgb(255 255 255 / 10%); }
+    &:hover { background: var(--accent-hover); color: var(--accent-ink) !important; transform: translateY(-2px); box-shadow: 0 5px 20px var(--accent-glow); }
     &:hover span { transform: translate(2px, -2px); }
   }
 
-  .about-workflow {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    margin-top: 2rem;
-    padding-top: 1.4rem;
-    border-top: 1px solid #444;
-    font: 0.72rem/1.6 monospace;
-    color: #e5e5e5;
-
-    > span:not(.about-workflow__arrow) { display: flex; align-items: center; gap: 0.4rem; }
-    i, &__arrow { color: #999; }
+  .about-hero__actions a.about-button:last-child {
+    background: transparent;
+    color: var(--accent-text);
+    &:hover { background: var(--accent-soft); color: var(--accent-ink) !important; }
   }
 
   .about-section { margin-top: 3rem; }
@@ -94,9 +85,9 @@
     margin-bottom: 1.3rem;
 
     h2 { margin-bottom: 0; font-size: 1.45rem; font-weight: 700; }
-    &::after { content: ''; flex: 1; height: 1px; background: #383838; }
+    &::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--accent-color) 0 40px, #383838 40px); }
   }
-  .about-index { color: #aaa; font: 0.75rem monospace; }
+  .about-index { color: var(--accent-text); font: 0.75rem monospace; }
   .about-section__intro { margin: -0.4rem 0 1.4rem; color: #bdbdbd; }
 
   .about-story { display: grid; grid-template-columns: 1.6fr 1fr; gap: 1.5rem; align-items: start; }
@@ -110,7 +101,7 @@
 
     .about-eyebrow { margin-bottom: 0.8rem; }
     &__fact { display: flex; align-items: center; gap: 0.8rem; padding-top: 1rem; border-top: 1px solid #414141; }
-    &__fact > i { font-size: 1.4rem; color: #ddd; }
+    &__fact > i { font-size: 1.4rem; color: var(--accent-text); }
     &__fact p { margin: 0; }
   }
 
@@ -148,8 +139,8 @@
       transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 
       > span { opacity: 0; }
-      &:hover { color: #fff; background: #252525; }
-      &[aria-selected='true'] { color: #fff; border-color: #636363; background: #303030; }
+      &:hover { color: var(--accent-ink); background: var(--accent-soft); }
+      &[aria-selected='true'] { color: var(--accent-text); border-color: var(--accent-border); background: var(--accent-soft); }
       &[aria-selected='true'] > span { opacity: 1; }
     }
   }
@@ -190,14 +181,14 @@
       transition: transform 200ms ease, border-color 200ms ease, background 200ms ease;
 
       &::after { content: '0' counter(principle); position: absolute; right: 1.3rem; top: 1.1rem; color: #888; font: 0.8rem monospace; }
-      > i { display: block; margin-bottom: 1.2rem; font-size: 1.2rem; color: #ddd; }
-      &:hover { transform: translateY(-4px); border-color: #999; background: #222; }
+      > i { display: block; margin-bottom: 1.2rem; font-size: 1.2rem; color: var(--accent-text); }
+      &:hover { transform: translateY(-4px); border-color: var(--accent-color); background: var(--accent-soft); }
     }
     h3 { margin-bottom: 0.6rem; font-size: 1rem; font-weight: 700; }
     p { margin: 0; font-size: 0.87rem; color: #c6c6c6; }
   }
 
-  a:focus-visible, button:focus-visible, [role='tabpanel']:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  a:focus-visible, button:focus-visible, [role='tabpanel']:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 4px; }
   [data-reveal] { transition: opacity 500ms ease, transform 500ms ease; }
   .reveal-pending { opacity: 0; transform: translateY(18px); }
 
@@ -209,8 +200,12 @@
     .about-focus__tabs { border-right: 0; border-bottom: 1px solid #414141; }
     .about-focus__tabs button { min-height: 48px; }
     .about-focus__panel { padding: 1.3rem; }
-    .about-workflow { display: grid; grid-template-columns: 1fr 16px 1fr; gap: 0.8rem; }
-    .about-workflow > .about-workflow__arrow:nth-child(4) { display: none; }
+    .about-hero__actions a.about-button:last-child {
+    background: transparent;
+    color: var(--accent-text);
+    &:hover { background: var(--accent-soft); color: var(--accent-ink) !important; }
+  }
+
   }
   @media (max-width: 400px) {
     .about-principles { grid-template-columns: minmax(0, 1fr); }

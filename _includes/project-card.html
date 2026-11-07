@@ -4,10 +4,6 @@
     <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }} architecture illustration" width="900" height="600" class="project-card__image" loading="lazy" decoding="async">
   </a>
   <div class="project-card__body">
-    <div class="project-card__eyebrow">
-      <span class="project-status{% if project.status == 'Completed' %} project-status--completed{% elsif project.status == 'Academic reference' %} project-status--reference{% endif %}">{{ project.status }}</span>
-      <span class="text-muted small">{{ project.category }}</span>
-    </div>
     <h3 class="h4 mb-2 project-card__title" data-toc-skip>
       <a class="project-link" href="{{ project.post_url | relative_url }}">{{ project.title }}</a>
     </h3>

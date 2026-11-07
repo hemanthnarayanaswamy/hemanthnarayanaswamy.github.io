@@ -39,19 +39,6 @@
     margin-bottom: 0;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0.37rem;
-    top: 1.5rem;
-    width: 0.85rem;
-    height: 0.85rem;
-    border-radius: 50%;
-    background-color: var(--timeline-node-bg);
-    border: 2px solid var(--timeline-year-dot-color);
-    box-shadow: 0 0 3px 0 rgb(0 0 0 / 10%);
-  }
-
   summary {
     list-style: none;
     cursor: pointer;
@@ -223,9 +210,5 @@
 
   .timeline-entry {
     padding-left: 2rem;
-
-    &::before {
-      left: 0.6rem;
-    }
   }
 }

@@ -1,10 +1,17 @@
 @mixin styles {
   color-scheme: dark;
-  --bs-primary: #dddddd;
-  --bs-primary-rgb: 221, 221, 221;
-  --bs-link-color: #dddddd;
-  --bs-link-hover-color: #ffffff;
-  --bs-focus-ring-color: rgb(255 255 255 / 20%);
+  --accent-color: #013220;
+  --accent-hover: #064d33;
+  --accent-ink: #f2f6f3;
+  --accent-text: #e2eae5;
+  --accent-soft: #0b1e15;
+  --accent-border: #3d6955;
+  --accent-glow: rgb(1 50 32 / 45%);
+  --bs-primary: var(--accent-color);
+  --bs-primary-rgb: 1, 50, 32;
+  --bs-link-color: var(--accent-text);
+  --bs-link-hover-color: var(--accent-ink);
+  --bs-focus-ring-color: var(--accent-glow);
 
   /* Framework color */
   --main-bg: #080808;
@@ -19,9 +26,9 @@
   --label-color: #cccccc;
   --blockquote-border-color: #707070;
   --blockquote-text-color: #b9b9b9;
-  --link-color: #dddddd;
-  --link-hover-color: #ffffff;
-  --link-underline-color: #777777;
+  --link-color: var(--accent-text);
+  --link-hover-color: var(--accent-ink);
+  --link-underline-color: var(--accent-border);
   --button-bg: #272727;
   --btn-border-color: #707070;
   --btn-backtotop-color: var(--text-color);
@@ -36,7 +43,7 @@
     rgb(56 56 56 / 40%) 50%,
     rgb(255 255 255 / 0%) 100%
   );
-  --project-blog-link-color: #dddddd;
+  --project-blog-link-color: var(--accent-text);
   --project-tech-badge-bg: #2c2c2c;
   --project-tech-badge-border: #808080;
   --project-tech-badge-color: #eeeeee;
@@ -47,9 +54,9 @@
   --sidebar-bg: #151515;
   --sidebar-border-color: #707070;
   --sidebar-muted-color: #dedede;
-  --sidebar-active-color: #ffffff;
+  --sidebar-active-color: var(--accent-ink);
   --sidebar-item-bg: #242424;
-  --sidebar-active-bg: #3d3d3d;
+  --sidebar-active-bg: var(--accent-color);
   --sidebar-hover-bg: #333333;
   --sidebar-btn-bg: #2b2b2b;
   --sidebar-btn-color: #e4e4e4;
@@ -60,7 +67,7 @@
   --topbar-text-color: var(--text-color);
   --search-border-color: #707070;
   --search-icon-color: #cccccc;
-  --input-focus-border-color: #dddddd;
+  --input-focus-border-color: var(--accent-text);
 
   /* Home page */
   --post-list-text-color: #ededed;
@@ -68,7 +75,7 @@
   --btn-paginator-hover-color: #333333;
 
   /* Posts */
-  --toc-highlight: #dddddd;
+  --toc-highlight: var(--accent-text);
   --toc-popup-border-color: #707070;
   --tag-hover: #363636;
   --tb-odd-bg: #252525; /* odd rows of the posts' table */

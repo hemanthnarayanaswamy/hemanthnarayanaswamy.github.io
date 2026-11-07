@@ -5,6 +5,7 @@ media_local: true
 refactor: false
 portfolio: true
 description: "Explore AI-assisted operations, enterprise retrieval, scalable cloud platforms, and reliable delivery through projects and production case studies."
+hide_title: true
 ---
 
 {% assign total_projects = site.data.projects.featured.size | plus: site.data.projects.production.size | plus: site.data.projects.academic.size %}
