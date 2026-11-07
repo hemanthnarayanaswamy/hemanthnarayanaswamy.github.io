@@ -1,0 +1,28 @@
+---
+layout: default
+panel_includes:
+  - toc
+---
+
+{% assign project_items = site.data.projects.featured | concat: site.data.projects.production | concat: site.data.projects.academic %}
+{% assign project = project_items | where: 'id', page.project_id | first %}
+
+<article class="px-1 project-overview" data-toc="true">
+  <header>
+    <p class="mb-3"><a href="{{ '/projects/' | relative_url }}">All Projects</a></p>
+    <div class="project-card__eyebrow mb-3">
+      <span class="project-status{% if project.status == 'Completed' %} project-status--completed{% elsif project.status == 'Academic reference' %} project-status--reference{% endif %}">{{ project.status }}</span>
+      <span class="text-muted small">{{ project.category }}</span>
+    </div>
+    <h1 data-toc-skip>{{ page.title | escape }}</h1>
+    <p class="text-muted">{{ project.subtitle }}</p>
+    <p>{{ project.description }}</p>
+  </header>
+  <figure class="project-overview__visual">
+    <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }} architecture illustration" width="900" height="600" decoding="async">
+  </figure>
+  <div class="content">{{ content }}</div>
+  {% if project.source_url %}
+    <p><a href="{{ project.source_url | escape }}" target="_blank" rel="noopener noreferrer">{{ project.source_label | default: 'Original source' }}</a></p>
+  {% endif %}
+</article>

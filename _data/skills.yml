@@ -1,0 +1,86 @@
+- title: "Cloud Platforms"
+  items:
+    - name: "Google Cloud"
+      icon: /assets/img/skills/googlecloud-original.svg
+    - name: "AWS"
+      icon: /assets/img/skills/amazonwebservices-original.svg
+- title: "Programming Languages"
+  items:
+    - name: "Python"
+      icon: /assets/img/skills/python-original.svg
+    - name: "Bash"
+      icon: /assets/img/skills/bash-original.svg
+    - name: "Go"
+      icon: /assets/img/skills/go-original.svg
+- title: "Ops Tools"
+  items:
+    - name: "Terraform"
+      icon: /assets/img/skills/terraform-original.svg
+    - name: "Ansible"
+      icon: /assets/img/skills/ansible-original.svg
+    - name: "GitHub Actions"
+      icon: /assets/img/skills/githubactions-original.svg
+    - name: "Jenkins"
+      icon: /assets/img/skills/jenkins-original.svg
+    - name: "ArgoCD"
+      icon: /assets/img/skills/argocd.svg
+    - name: "Helm"
+      icon: /assets/img/skills/helm-plain.svg
+- title: "Containers & Orchestration"
+  items:
+    - name: "Docker"
+      icon: /assets/img/skills/docker-original.svg
+    - name: "Kubernetes"
+      icon: /assets/img/skills/kubernetes-plain.svg
+    - name: "Helm"
+      icon: /assets/img/skills/helm-plain.svg
+    - name: "OpenShift"
+      icon: /assets/img/skills/openshift-original.svg
+- title: "Databases & Storage"
+  items:
+    - name: "PostgreSQL"
+      icon: /assets/img/skills/postgresql-original.svg
+    - name: "MySQL"
+      icon: /assets/img/skills/mysql-original.svg
+    - name: "MongoDB"
+      icon: /assets/img/skills/mongodb-original.svg
+    - name: "Redis"
+      icon: /assets/img/skills/redis-original.svg
+- title: "Source Control"
+  items:
+    - name: "Git"
+      icon: /assets/img/skills/git-original.svg
+    - name: "GitHub"
+      icon: /assets/img/skills/github-original.svg
+    - name: "GitLab"
+      icon: /assets/img/skills/gitlab-original.svg
+    - name: "Bitbucket"
+      icon: /assets/img/skills/bitbucket-original.svg
+- title: "Automation & Quality"
+  items:
+    - name: "Cypress"
+      icon: /assets/img/skills/cypressio-plain.svg
+    - name: "Selenium"
+      icon: /assets/img/skills/selenium-original.svg
+    - name: "Jest"
+      icon: /assets/img/skills/jest-plain.svg
+    - name: "SonarQube"
+      icon: /assets/img/skills/sonarqube-original.svg
+- title: "Monitoring & Logging"
+  items:
+    - name: "Prometheus"
+      icon: /assets/img/skills/prometheus-original.svg
+    - name: "Grafana"
+      icon: /assets/img/skills/grafana-original.svg
+    - name: "Elastic"
+      icon: /assets/img/skills/elasticsearch-original.svg
+    - name: "Datadog"
+      icon: /assets/img/skills/datadog-original.svg
+- title: "Operating Systems"
+  items:
+    - name: "Linux"
+      icon: /assets/img/skills/linux-original.svg
+    - name: "macOS"
+      icon: /assets/img/skills/apple-original.svg
+    - name: "Windows"
+      icon: /assets/img/skills/windows8-original.svg

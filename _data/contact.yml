@@ -9,11 +9,11 @@
 
 - type: linkedin
   icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/hemanthnarayanaswamy"
+  url: "https://www.linkedin.com/in/hemanth2204/"
 
 - type: leetcode
   icon_image: "/assets/img/icons/leetcode.svg"
-  url: "https://leetcode.com/hemanthnarayanaswamy"
+  url: "https://leetcode.com/u/hemanthhawk/"
 
 - type: blogs
   icon: "fas fa-blog"

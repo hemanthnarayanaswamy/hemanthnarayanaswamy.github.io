@@ -1,60 +1,59 @@
 featured:
-  - title: E-Commerce Platform
-    subtitle: Full-Stack Web Application
-    description: Built a complete e-commerce experience with secure payments, order management, and responsive UI.
-    technologies: [React, Node.js, Express, MongoDB, Stripe API]
-    demo_url: https://example.com/ecommerce
-    repo_url: https://github.com/hemanthnarayanaswamy/ecommerce
-    image: /assets/img/projects/ecommerce.jpg
-    post_url: /projects/e-commerce-platform/
-  - title: Machine Learning Dashboard
-    subtitle: Real-time Data Analytics
-    description: Interactive dashboard with live streaming data, predictive analytics, and automated insights.
-    technologies: [Python, Flask, React, D3.js, Scikit-learn]
-    demo_url: https://example.com/ml-dashboard
-    repo_url: https://github.com/hemanthnarayanaswamy/ml-dashboard
-    image: /assets/img/projects/ml-dashboard.jpg
-    post_url: /projects/machine-learning-dashboard/
-  - title: Mobile Fitness App
-    subtitle: Cross-Platform Coaching
-    description: React Native app that integrates with wearables, tracks workouts, and surfaces health insights.
-    technologies: [React Native, Firebase, HealthKit, Google Fit]
-    demo_url: https://example.com/fitness-app
-    repo_url: https://github.com/hemanthnarayanaswamy/fitness-app
-    image: /assets/img/projects/fitness-app.jpg
-    post_url: /projects/mobile-fitness-app/
-
-open_source:
-  - title: React Component Library
-    subtitle: UI/UX enhancements for open-source design systems
-    description: Added accessible components, dark-mode support, and Storybook docs adopted across the community.
-    technologies: [React, TypeScript, Storybook]
-    repo_url: https://github.com/hemanthnarayanaswamy/react-components
-    demo_url: https://example.com/react-components
-    image: /assets/img/projects/opensource-react.jpg
-    post_url: /projects/react-component-library/
-  - title: DevOps Automation Scripts
-    subtitle: Tooling for CI/CD and infrastructure
-    description: Terraform modules, GitHub Action workflows, and CLI utilities powering multi-cloud deployments.
-    technologies: [Terraform, GitHub Actions, Python]
-    repo_url: https://github.com/hemanthnarayanaswamy/devops-scripts
-    demo_url: https://example.com/devops-scripts
-    image: /assets/img/projects/opensource-devops.jpg
-    post_url: /projects/devops-automation-scripts/
-
-client:
-  - title: Banking System Modernization
-    subtitle: Enterprise microservices program
-    description: Led modernization of legacy banking apps, building API gateways, orchestration layers, and observability.
-    technologies: [Java, Spring Boot, Kafka, AWS]
-    demo_url: https://example.com/banking-modernization
-    image: /assets/img/projects/client-banking.jpg
-    post_url: /projects/banking-system-modernization/
-  - title: Startup MVP Accelerator
-    subtitle: Product launch for a SaaS startup
-    description: Delivered MVP in eight weeks, covering architecture, development, CI/CD, and production hardening.
-    technologies: [Next.js, Node.js, PostgreSQL, Docker]
-    repo_url: https://github.com/hemanthnarayanaswamy/startup-mvp
-    demo_url: https://example.com/startup-mvp
-    image: /assets/img/projects/client-startup.jpg
-    post_url: /projects/startup-mvp-accelerator/
+  - id: "rca-platform"
+    title: "RCA Platform"
+    subtitle: "Autonomous AI SRE & Microservices Platform"
+    status: "Completed"
+    category: "AI SRE"
+    description: "An autonomous AI SRE platform focused on root-cause analysis across microservices, connecting incident context with production troubleshooting."
+    highlights: ["Root-cause investigation across service boundaries.","AI-assisted context for SRE workflows."]
+    focus: ["AIOps","Microservices","Root-Cause Analysis","SRE"]
+    post_url: "/projects/rca-platform/"
+    image: "/assets/img/projects/rca-platform.svg"
+  - id: "sap-schema-rag"
+    title: "SAP Schema Intelligence"
+    subtitle: "LLMOps / RAG Platform for SAP Metadata"
+    status: "Completed"
+    category: "Enterprise RAG"
+    description: "A retrieval-augmented platform for exploring SAP database tables and column information through natural-language questions."
+    highlights: ["Natural-language discovery of SAP table and column metadata.","Schema context for developers, analysts, and integration work."]
+    focus: ["LLMOps","RAG","SAP","SQL Metadata"]
+    post_url: "/projects/sap-schema-rag/"
+    image: "/assets/img/projects/sap-schema-rag.svg"
+production:
+  - id: "elastic-gpu-training"
+    title: "Elastic GPU Training Platform"
+    subtitle: "GitOps-managed MLOps on Google Cloud"
+    status: "Production case study"
+    category: "Cloud & MLOps"
+    description: "Moved YOLO training from a single on-premises GPU server to a GitOps-managed GKE platform, using queued Spot GPU jobs and scale-to-zero capacity."
+    highlights: ["Reduced dataset-to-model time from six hours to two.","Scheduled training with Argo Workflows and Kueue on NVIDIA L4 Spot pools."]
+    technologies: ["GKE","Argo Workflows","Kueue","GitOps","Spot GPUs"]
+    metric: "6h → 2h"
+    metric_label: "Dataset-to-model time"
+    post_url: "/projects/elastic-gpu-training/"
+    image: "/assets/img/projects/elastic-gpu-training.svg"
+  - id: "factory-edge-release-platform"
+    title: "Factory Edge Release Platform"
+    subtitle: "Blue/green delivery for visual inspection"
+    status: "Production case study"
+    category: "CI/CD & Edge"
+    description: "Replaced manual SSH/tmux releases with automated delivery across 50–70 factory inspection stations, preserving live Socket.IO sessions during deployments."
+    highlights: ["GitHub Actions self-hosted runners and Docker Compose for repeatable releases.","NGINX blue/green switching with WebSocket-aware sticky routing."]
+    technologies: ["GitHub Actions","Docker Compose","NGINX","Socket.IO"]
+    metric: "50–70"
+    metric_label: "Inspection stations"
+    post_url: "/projects/factory-edge-release-platform/"
+    image: "/assets/img/projects/factory-edge-release-platform.svg"
+academic:
+  - id: "concordia-first-responder-iot"
+    title: "IoT Monitoring for First Responders"
+    subtitle: "Concordia ECE · Capstone reference (2022)"
+    status: "Academic reference"
+    category: "Embedded & IoT"
+    description: "A Concordia ECE capstone example using wearable sensors and wireless telemetry to monitor first responders. Included as academic inspiration."
+    highlights: ["Connected sensing, wireless communication, and a monitoring backend.","Original project: Concordia ECE Group 2022-13, supervised by R. Coutinho."]
+    technologies: ["Embedded Systems","IoT","Bluetooth","LoRa","Telemetry"]
+    source_url: "https://users.encs.concordia.ca/~eceweb/capstone/projectshow.php?id=560"
+    source_label: "Concordia source"
+    post_url: "/projects/concordia-first-responder-iot/"
+    image: "/assets/img/projects/concordia-first-responder-iot.svg"

@@ -1,4 +1,5 @@
 ---
+published: false
 title: Certified Kubernetes Security Specilist (CKS)
 description: Designing scalable architectures on AWS and learning through real-world labs and projects.
 date: 2024-06-01

@@ -1,5 +1,7 @@
 <!-- The trending tags list -->
 
+{% unless site.show_trending_tags == false %}
+
 {% assign MAX = 10 %}
 
 {% assign size_list = '' | split: '' %}
@@ -44,3 +46,5 @@
     </div>
   </section>
 {% endif %}
+
+{% endunless %}

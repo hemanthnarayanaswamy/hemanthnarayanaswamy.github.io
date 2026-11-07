@@ -1,16 +1,29 @@
-- title: Master of Science in Computer Science
-  subtitle: University of Technology
-  period: 2017 — 2019
-  summary: Specialized in Artificial Intelligence and Machine Learning with research focused on recommendation systems.
+- title: Master of Engineering (M.Eng.) in Computer Engineering
+  subtitle: Concordia University · Montreal, QC
+  logo:
+    path: /assets/img/organizations/concordia-mark.png
+    alt: Concordia University logo
+  period: Jan 2021 — Dec 2022
+  meta: "GPA: 3.75"
+  summary: >-
+    Graduate studies in Computer Engineering, completed in December 2022.
   highlights:
-    - GPA: 3.8/4.0 with coursework in Advanced Algorithms, Data Mining, and Computer Vision.
-    - Thesis: “AI-Powered Recommendation Systems for E-commerce,” combining deep learning with behavioral analytics.
-    - Graduate assistant for the Machine Intelligence Lab, supporting publications and mentoring undergrads.
-- title: Bachelor of Engineering in Computer Science
-  subtitle: Engineering College
-  period: 2013 — 2017
-  summary: Built a strong foundation in software engineering, distributed systems, and database design.
+    - >-
+      **Related program curriculum:** Programming on the Cloud, Fault-Tolerant
+      Distributed Systems, Distributed Software Systems, and Software Engineering.
+
+- title: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
+  subtitle: Bangalore Institute of Technology · Bangalore, India
+  logo:
+    path: /assets/img/organizations/bangalore-institute-of-technology.png
+    alt: Bangalore Institute of Technology emblem
+    fit: emblem
+  period: Jun 2016 — Jul 2020
+  meta: "CGPA: 8.8"
+  summary: >-
+    Undergraduate studies in Electronics and Communication Engineering, completed
+    in July 2020.
   highlights:
-    - GPA: 3.9/4.0; Dean’s List every semester.
-    - Capstone: “Blockchain-based Supply Chain Management” that automated provenance tracking.
-    - Led programming club workshops and represented the college in national hackathons.
+    - >-
+      **Related program curriculum:** ARM Microcontroller & Embedded Systems,
+      Computer Communication Networks, Embedded Controller Lab, and Computer Networks Lab.

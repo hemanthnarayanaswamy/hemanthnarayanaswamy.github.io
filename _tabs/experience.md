@@ -1,6 +1,8 @@
 ---
 title: Work Experience
 icon: fas fa-briefcase
+media_local: true
+refactor: false
 ---
 
 {% assign experience_items = site.data.experience %}
@@ -8,7 +10,7 @@ icon: fas fa-briefcase
 
 ## Professional Experience
 
-<p class="text-muted">A condensed story of the roles where I designed systems, led teams, and iterated quickly. Click any card to expand the journey.</p>
+<p class="text-muted">My work across cloud platforms, production reliability, and operations automation. Expand a role to explore the teams, projects, and results.</p>
 
 <div class="timeline-section" id="experience-timeline">
   <div class="timeline">
@@ -46,7 +48,7 @@ icon: fas fa-briefcase
 
 ## Education
 
-<p class="text-muted">Academic foundations that shaped my approach to research, experimentation, and teaching.</p>
+<p class="text-muted">My engineering education, with related topics from the published program curricula.</p>
 
 <div class="timeline-section" id="education-timeline">
   <div class="timeline">

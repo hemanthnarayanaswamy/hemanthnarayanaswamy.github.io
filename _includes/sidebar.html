@@ -9,15 +9,20 @@
     </div>
   {% endunless %}
   <header class="profile-wrapper">
-    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+    <a href="{{ '/' | relative_url }}" id="avatar">
       {%- if site.avatar != empty and site.avatar -%}
-        {%- capture avatar_url -%}
-          {% include media-url.html src=site.avatar %}
-        {%- endcapture -%}
-        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        {% if site.avatar contains '://' %}
+          {% assign avatar_url = site.avatar %}
+        {% else %}
+          {% assign avatar_url = site.avatar | relative_url %}
+        {% endif %}
+        <img src="{{ avatar_url }}" width="112" height="112" alt="{{ site.social.name | default: site.title | escape }}" decoding="async">
       {%- endif -%}
     </a>
-
+    <a href="{{ '/' | relative_url }}" class="profile-name">
+      <span>Hemanth</span>
+      <span>Narayanaswamy</span>
+    </a>
   </header>
   <!-- .profile-wrapper -->
 
@@ -25,6 +30,9 @@
     {% assign desired_order = "/about/,/experience/,/certifications/,/projects/,/skills/,/blogs/,/categories/,/archives/,/contact/,/tags/" | split: "," %}
     <ul class="nav">
       {% for url in desired_order %}
+        {% if url == '/tags/' and site.show_tags_tab == false %}
+          {% continue %}
+        {% endif %}
         {% assign tab = site.tabs | where: 'url', url | first %}
         {% if tab == nil %}
           {% assign tab = site.tabs | where: 'nav_url', url | first %}

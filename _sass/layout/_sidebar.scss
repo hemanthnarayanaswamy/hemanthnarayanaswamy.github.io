@@ -36,7 +36,9 @@ $sidebar-btn-size: 1.75rem;
   top: 0;
   left: 0;
   height: 100%;
-  overflow-y: auto;
+  height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: none;
   width: v.$sidebar-width;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
@@ -77,42 +79,51 @@ $sidebar-btn-size: 1.75rem;
 
   #avatar {
     display: block;
-    width: 6.5rem;
-    height: 6.5rem;
+    flex-shrink: 0;
+    width: 5rem;
+    height: 5rem;
     overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
+    border: 1px solid var(--avatar-border-color);
+    border-radius: 0.75rem;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
-    @include bp.sm {
-      width: 7rem;
-      height: 7rem;
-    }
-
     img {
-      transition: transform 0.5s;
-
-      &:hover {
-        transform: scale(1.2);
-      }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
     }
   }
 
   .profile-wrapper {
-    @include mx.mt-mb(2.5rem);
+    @include mx.mt-mb(2rem);
     @extend %clickable-transition;
 
-    padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: 100%;
 
-    @include bp.lg {
-      margin-top: 3rem;
-    }
-
     @include bp.xxxl {
-      margin-top: 3.5rem;
-      margin-bottom: 2.5rem;
-      padding-left: 3.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .profile-name {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--site-title-color);
+
+    &:hover {
+      color: var(--sidebar-active-color);
     }
   }
 
@@ -214,6 +225,7 @@ $sidebar-btn-size: 1.75rem;
   }
 
   .sidebar-bottom {
+    flex-shrink: 0;
     padding-left: 2rem;
     padding-right: 1rem;
     margin-bottom: 1.5rem;
@@ -247,6 +259,75 @@ $sidebar-btn-size: 1.75rem;
       object-fit: contain;
     }
   } /* .sidebar-bottom */
+
+  /* Keep the fixed navigation within shorter viewports without scrolling. */
+  @media (max-height: 800px) {
+    .profile-wrapper {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    #avatar {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+
+      li.nav-item a.nav-link {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    .sidebar-bottom {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  @media (min-height: 501px) and (max-height: 650px) {
+    .profile-wrapper {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    #avatar {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    ul li.nav-item a.nav-link {
+      padding-top: 0.35rem;
+      padding-bottom: 0.35rem;
+    }
+  }
+
+  @media (max-height: 500px) {
+    .profile-wrapper {
+      display: none;
+    }
+
+    .sidebar-top-actions {
+      padding-top: 0.25rem;
+    }
+
+    ul {
+      margin-bottom: 0.25rem;
+
+      li.nav-item {
+        a.nav-link {
+          padding-top: 0.125rem;
+          padding-bottom: 0.125rem;
+          line-height: 1.25;
+        }
+
+        &:not(:first-child) {
+          margin-top: 0.125rem;
+        }
+      }
+    }
+  }
 } /* #sidebar */
 
 [#{$sidebar-display}] {

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Hemanth Narayanaswamy</title>
   <subtitle>Personal portfolio showcasing my skills, projects, and professional experience. A hybrid portfolio combining technical expertise with creative achievements.</subtitle>
-  <updated>2026-02-04T01:21:57+05:30</updated>
+  <updated>2026-11-07T16:49:51+05:30</updated>
   <author>
     <name>Hemanth Narayanaswamy</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Mobile Fitness App</title>
-    <link href="http://localhost:4000/projects/mobile-fitness-app/" rel="alternate" type="text/html" title="Mobile Fitness App" />
-    <published>2024-03-05T08:30:00+05:30</published>
+    <title>SAP Schema Intelligence</title>
+    <link href="http://localhost:4000/projects/sap-schema-rag/" rel="alternate" type="text/html" title="SAP Schema Intelligence" />
+    <published>2026-11-07T00:00:00+05:30</published>
   
-    <updated>2024-03-05T08:30:00+05:30</updated>
+    <updated>2026-11-07T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/projects/mobile-fitness-app/</id>
-    <content type="text/html" src="http://localhost:4000/projects/mobile-fitness-app/" />
+    <id>http://localhost:4000/projects/sap-schema-rag/</id>
+    <content type="text/html" src="http://localhost:4000/projects/sap-schema-rag/" />
     <author>
       <name>Hemanth Narayanaswamy</name>
     </author>
@@ -38,20 +38,20 @@
     
   
 
-  <summary>Cross-platform coaching app integrated with wearables.</summary>
+  <summary>A retrieval-augmented platform for exploring SAP database tables and column information through natural-language questions.</summary>
 
   </entry>
 
   
   <entry>
-    <title>Machine Learning Dashboard</title>
-    <link href="http://localhost:4000/projects/machine-learning-dashboard/" rel="alternate" type="text/html" title="Machine Learning Dashboard" />
-    <published>2024-02-10T10:00:00+05:30</published>
+    <title>RCA Platform</title>
+    <link href="http://localhost:4000/projects/rca-platform/" rel="alternate" type="text/html" title="RCA Platform" />
+    <published>2026-11-07T00:00:00+05:30</published>
   
-    <updated>2024-02-10T10:00:00+05:30</updated>
+    <updated>2026-11-07T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/projects/machine-learning-dashboard/</id>
-    <content type="text/html" src="http://localhost:4000/projects/machine-learning-dashboard/" />
+    <id>http://localhost:4000/projects/rca-platform/</id>
+    <content type="text/html" src="http://localhost:4000/projects/rca-platform/" />
     <author>
       <name>Hemanth Narayanaswamy</name>
     </author>
@@ -62,20 +62,20 @@
     
   
 
-  <summary>Telemetry + predictive analytics dashboard for operations teams.</summary>
+  <summary>An autonomous AI SRE platform focused on root-cause analysis across microservices, connecting incident context with production troubleshooting.</summary>
 
   </entry>
 
   
   <entry>
-    <title>E-Commerce Platform</title>
-    <link href="http://localhost:4000/projects/e-commerce-platform/" rel="alternate" type="text/html" title="E-Commerce Platform" />
-    <published>2024-01-15T09:00:00+05:30</published>
+    <title>Factory Edge Release Platform</title>
+    <link href="http://localhost:4000/projects/factory-edge-release-platform/" rel="alternate" type="text/html" title="Factory Edge Release Platform" />
+    <published>2026-11-07T00:00:00+05:30</published>
   
-    <updated>2024-01-15T09:00:00+05:30</updated>
+    <updated>2026-11-07T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/projects/e-commerce-platform/</id>
-    <content type="text/html" src="http://localhost:4000/projects/e-commerce-platform/" />
+    <id>http://localhost:4000/projects/factory-edge-release-platform/</id>
+    <content type="text/html" src="http://localhost:4000/projects/factory-edge-release-platform/" />
     <author>
       <name>Hemanth Narayanaswamy</name>
     </author>
@@ -86,59 +86,55 @@
     
   
 
-  <summary>Full-stack marketplace MVP with secure checkout and real-time order tracking.</summary>
+  <summary>Replaced manual SSH/tmux releases with automated delivery across 50–70 factory inspection stations, preserving live Socket.IO sessions during deployments.</summary>
 
   </entry>
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-10T22:04:00+05:30</published>
+    <title>Elastic GPU Training Platform</title>
+    <link href="http://localhost:4000/projects/elastic-gpu-training/" rel="alternate" type="text/html" title="Elastic GPU Training Platform" />
+    <published>2026-11-07T00:00:00+05:30</published>
   
-    <updated>2019-08-10T22:04:00+05:30</updated>
+    <updated>2026-11-07T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content type="text/html" src="http://localhost:4000/posts/customize-the-favicon/" />
+    <id>http://localhost:4000/projects/elastic-gpu-training/</id>
+    <content type="text/html" src="http://localhost:4000/projects/elastic-gpu-training/" />
     <author>
-      <name>cotes</name>
+      <name>Hemanth Narayanaswamy</name>
     </author>
 
   
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
+    <category term="Projects" />
     
   
 
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
+  <summary>Moved YOLO training from a single on-premises GPU server to a GitOps-managed GKE platform, using queued Spot GPU jobs and scale-to-zero capacity.</summary>
 
   </entry>
 
   
   <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T18:25:00+05:30</published>
+    <title>IoT Monitoring for First Responders</title>
+    <link href="http://localhost:4000/projects/concordia-first-responder-iot/" rel="alternate" type="text/html" title="IoT Monitoring for First Responders" />
+    <published>2026-11-07T00:00:00+05:30</published>
   
-    <updated>2019-08-09T18:25:00+05:30</updated>
+    <updated>2026-11-07T00:00:00+05:30</updated>
   
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content type="text/html" src="http://localhost:4000/posts/getting-started/" />
+    <id>http://localhost:4000/projects/concordia-first-responder-iot/</id>
+    <content type="text/html" src="http://localhost:4000/projects/concordia-first-responder-iot/" />
     <author>
-      <name>cotes</name>
+      <name>Hemanth Narayanaswamy</name>
     </author>
 
   
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
+    <category term="Projects" />
     
   
 
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
+  <summary>A Concordia ECE capstone example using wearable sensors and wireless telemetry to monitor first responders. Included as academic inspiration.</summary>
 
   </entry>
 

@@ -35,11 +35,11 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Hemanth Narayanaswamy
-  email: hemanth.narayanaswamy@example.com # change to your email address
+  email: hemanthnarayanswamy@gmail.com
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/hemanthnarayanaswamy # change to your GitHub homepage
-    - https://linkedin.com/in/hemanthnarayanaswamy # change to your LinkedIn homepage
+    - https://www.linkedin.com/in/hemanth2204/
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://twitter.com/hemanthn
@@ -106,6 +106,10 @@ social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
+
+# Optional portfolio navigation and tag widgets. Set to true to show them again.
+show_tags_tab: false
+show_trending_tags: false
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.

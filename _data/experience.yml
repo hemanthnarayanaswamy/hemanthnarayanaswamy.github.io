@@ -1,42 +1,186 @@
-- role: Senior Software Engineer
-  company: TechCorp Solutions · Bangalore, India
-  start: 2022-01-01
-  end:
-  summary: Leading the design and delivery of microservices-based platforms that power enterprise-scale applications.
-  work:
-    - Led multi-team adoption of event-driven services, improving resiliency and reducing MTTR by 35%.
-    - Mentored junior engineers through code reviews and architecture clinics, raising team delivery quality.
-  project:
-    - Architected a payments hub that processed 3M+ transactions/day with automated rollbacks and observability baked in.
-    - Built CI/CD templates that trim deployment time from hours to minutes through parallel pipelines.
-  technology:
-    - Go · Node.js · AWS (EKS, Lambda, DynamoDB)
-    - Kafka · Terraform · GitHub Actions
-- role: Full-Stack Developer
-  company: InnovateTech · Remote
+- role: DevOps Developer
+  company: Promark Electronics · Montreal, QC
+  logo:
+    path: /assets/img/organizations/promark.svg
+    alt: Promark Electronics logo
+  start: 2023-05-01
+  end: 2026-10-01
+  summary: >-
+    Worked across the **KonnectAI product team** and **internal IT Operations** at
+    Promark Electronics, part of Electrical Components International (ECI).
+    Built and operated infrastructure for an AI visual-inspection platform while
+    automating the plant's IT and business systems.
+  sections:
+    - title: KonnectAI & Computer Vision Team
+      focus: MLOps · Infrastructure · DevOps · Cloud Operations
+      highlights:
+        - >-
+          Designed reusable **Terraform modules** for a multi-tenant visual-inspection
+          SaaS on Google Cloud. Managed **30 isolated customer projects across four
+          regions**, reducing onboarding from **1–2 days to a few hours**.
+        - >-
+          Migrated YOLO training from an on-premises GPU server to a **GitOps-managed
+          GKE platform**. Used Argo Workflows and Kueue to schedule jobs on Spot
+          NVIDIA L4 GPU pools that scale to zero, cutting dataset-to-model time
+          from **six hours to two**.
+        - >-
+          Replaced manual SSH/tmux deployments across **50–70 factory inspection
+          stations** with GitHub Actions self-hosted runners and Docker Compose.
+          Implemented **NGINX blue/green releases with WebSocket-aware sticky
+          routing** to preserve live Socket.IO inspection sessions during deployments.
+        - >-
+          Built GitHub Actions pipelines with **keyless Workload Identity Federation**,
+          removing the need for stored, long-lived cloud credentials.
+        - >-
+          Added SonarQube, static analysis, and **Trivy container and IaC scanning**
+          as quality gates that block builds with critical CVEs.
+        - >-
+          Streamed GCP billing exports and Firestore inspection data into **BigQuery**.
+          Built Looker dashboards for per-client cost and usage, and model detection trends.
+        - >-
+          Set up **Prometheus, Grafana, and Cloud Logging** monitoring, routing
+          alerts to Slack and Teams for incident response.
+        - >-
+          Managed secrets, identity, and access with **IAM, HashiCorp Vault, and GCP KMS**.
+    - title: ECI / Promark IT Operations Team
+      focus: IT Operations · Automation · Observability
+      highlights:
+        - >-
+          Built a **Python integration** using the SAP Business One Service Layer,
+          VKS API, SQL Server triggers, and Agent jobs to automate work-order
+          handoffs between the ERP and shop floor.
+        - >-
+          Delivered **Power BI dashboards** backed by optimized SQL Server queries
+          over SAP Business One for finance and operations reporting.
+        - >-
+          Automated **zero-touch Linux provisioning** with Ubuntu autoinstall,
+          idempotent Ansible roles, and Bash. Reduced server builds from **two days
+          to three hours** and eliminated configuration drift between test and production.
+        - >-
+          Administered **25–30 Linux servers** running ERP systems and internal tools.
+          Standardized patching, UFW/iptables firewalls, CIS-aligned SSH hardening,
+          and TLS certificate renewal with Ansible and Bash, with **zero certificate
+          expiry outages**.
+  tools:
+    - GCP (GKE, Cloud Run, BigQuery, Firestore, Cloud SQL, Cloud Functions, KMS)
+    - Terraform
+    - Terragrunt
+    - Ansible
+    - Kubernetes
+    - Docker
+    - Docker Compose
+    - Helm
+    - ArgoCD
+    - Argo Workflows
+    - Kueue
+    - GitHub Actions
+    - NGINX
+    - SonarQube
+    - Trivy
+    - HashiCorp Vault
+    - Prometheus
+    - Grafana
+    - Cloud Logging
+    - Looker
+    - Power BI
+    - SAP Business One
+    - VKS API
+    - SQL Server
+    - Python
+    - Bash
+
+- role: Infrastructure Support Specialist
+  company: Zola · Montreal, QC
+  logo:
+    path: /assets/img/organizations/zola.svg
+    alt: Zola logo
+  start: 2022-09-01
+  end: 2023-04-01
+  summary: >-
+    Supported cloud infrastructure, Kubernetes observability, and incident response
+    through migration cutovers and production release windows.
+  sections:
+    - title: IT Infrastructure & Support Team
+      focus: Infrastructure Support · Cloud Operations · Incident Management
+      highlights:
+        - >-
+          Contributed to the **zero-downtime migration of 30 Java microservices
+          from ECS to EKS**, personally migrating **eight services**.
+        - >-
+          Converted ECS task definitions to **Helm charts** and remapped task roles,
+          ALB target groups, and secrets for EKS, using **IRSA** for service-account identity.
+        - >-
+          Deployed **kube-prometheus-stack** across **three EKS clusters**, combining
+          Prometheus, Alertmanager, and Grafana with PagerDuty and Slack alerting.
+          Built per-service error-rate and p99 latency dashboards, reducing crash-loop
+          detection from **about 30 minutes to under five**.
+        - >-
+          Served as the infrastructure contact on **Major Incident Management
+          bridges** during cutovers and releases. Triaged environment defects with
+          product and engineering leads, restoring service within SLA across **12 incidents**.
+        - >-
+          Turned postmortem findings into **eight new alerts and five runbooks**.
+  tools:
+    - AWS (EKS, ECS, ALB, IAM/IRSA)
+    - Kubernetes
+    - Helm
+    - Prometheus
+    - Alertmanager
+    - Grafana
+    - PagerDuty
+    - Slack
+    - Linux
+
+- role: Cloud Support Engineer
+  company: Huawei Technologies India · Bangalore, India
+  logo:
+    path: /assets/img/organizations/huawei-mark.png
+    alt: Huawei logo
+  start: 2020-06-01
+  end: 2021-06-01
+  summary: >-
+    Supported **Huawei iManager U2000** for **Maxis Malaysia**, maintaining the
+    health and availability of a production telecom network-management platform.
+  sections:
+    - title: Telecom Cloud OSS Platform Team
+      focus: Cloud Operations · Telecom OSS · Network Management · DevOps
+      highlights:
+        - >-
+          Automated **12+ daily O&M checks** with Bash, Python, and cron, covering
+          CPU, memory, disk health, services, log rotation, and database backups.
+          Saved **about eight hours per week** and eliminated missed health checks
+          across **six production servers**.
+        - >-
+          Resolved **180+ P1–P3 incidents within SLA** through alarm triage, log
+          analysis, and root-cause investigation across application, database,
+          and Linux layers.
+        - >-
+          Executed **25+ planned patches, upgrades, and configuration changes** on
+          a high-availability, dual-node SUSE Linux cluster during maintenance windows.
+        - >-
+          Achieved **zero unplanned downtime during those changes** through
+          pre-change validation, documented rollback plans, and post-change health checks.
+  tools:
+    - Huawei iManager U2000
+    - SUSE Linux
+    - Bash
+    - Python
+    - cron
+    - Database backup and recovery
+    - Telecom OSS/FCAPS
+
+- role: Graduate Engineering Trainee
+  company: Huawei Technologies India · Bangalore, India
+  logo:
+    path: /assets/img/organizations/huawei-mark.png
+    alt: Huawei logo
   start: 2020-03-01
-  end: 2021-12-01
-  summary: Built and maintained customer-facing products across the stack while collaborating closely with designers and PMs.
+  end: 2020-06-01
+  summary: >-
+    Completed intensive training in Linux administration, cloud computing, and
+    telecom operations before joining the Maxis account as a Cloud Support Engineer.
   work:
-    - Delivered five production web applications with responsive UI and A11y-first design.
-    - Reduced escaped defects by 30% by institutionalizing component libraries and snapshot testing.
-  project:
-    - Implemented a real-time analytics dashboard with web sockets and serverless ingestion.
-    - Led rebuild of onboarding flow that increased activation by 18%.
-  technology:
-    - React · TypeScript · GraphQL · Node.js
-    - PostgreSQL · AWS Amplify · Cypress
-- role: Junior Developer
-  company: StartupHub · Bangalore, India
-  start: 2019-06-01
-  end: 2020-02-01
-  summary: Contributed to MVP builds for fast-paced startups and adopted modern web practices through agile delivery.
-  work:
-    - Partnered with founders to prototype MVPs, iterating weekly on customer feedback.
-    - Built CI scripts and deployment guides that enabled non-engineers to ship updates safely.
-  project:
-    - Delivered two cross-platform apps (React Native) for health-tech pilots.
-    - Created dashboards for seed-stage founders to monitor growth metrics.
-  technology:
-    - React · React Native · Express
-    - MongoDB · Firebase · Docker
+    - >-
+      Trained in **FCAPS** — fault, configuration, accounting, performance, and
+      security management — for telecom operations and maintenance.
+    - Selected for a **full-time Cloud Support Engineer** role supporting Maxis Malaysia.

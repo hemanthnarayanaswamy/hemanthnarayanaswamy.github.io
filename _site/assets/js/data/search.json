@@ -1,6 +1,51 @@
 [
   
   {
+    "title": "SAP Schema Intelligence",
+    "url": "/projects/sap-schema-rag/",
+    "categories": "Projects",
+    "tags": "LLMOps, RAG, SAP, SQL Metadata",
+    "date": "2026-11-07 00:00:00 +0530",
+    "content": "A retrieval-augmented platform for exploring SAP database tables and column information through natural-language questions."
+  },
+  
+  {
+    "title": "RCA Platform",
+    "url": "/projects/rca-platform/",
+    "categories": "Projects",
+    "tags": "AIOps, Microservices, Root-Cause Analysis, SRE",
+    "date": "2026-11-07 00:00:00 +0530",
+    "content": "An autonomous AI SRE platform focused on root-cause analysis across microservices, connecting incident context with production troubleshooting."
+  },
+  
+  {
+    "title": "Factory Edge Release Platform",
+    "url": "/projects/factory-edge-release-platform/",
+    "categories": "Projects",
+    "tags": "GitHub Actions, Docker Compose, NGINX, Socket.IO",
+    "date": "2026-11-07 00:00:00 +0530",
+    "content": "Replaced manual SSH/tmux releases with automated delivery across 50–70 factory inspection stations, preserving live Socket.IO sessions during deployments."
+  },
+  
+  {
+    "title": "Elastic GPU Training Platform",
+    "url": "/projects/elastic-gpu-training/",
+    "categories": "Projects",
+    "tags": "GKE, Argo Workflows, Kueue, GitOps, Spot GPUs",
+    "date": "2026-11-07 00:00:00 +0530",
+    "content": "Moved YOLO training from a single on-premises GPU server to a GitOps-managed GKE platform, using queued Spot GPU jobs and scale-to-zero capacity."
+  },
+  
+  {
+    "title": "IoT Monitoring for First Responders",
+    "url": "/projects/concordia-first-responder-iot/",
+    "categories": "Projects",
+    "tags": "Embedded Systems, IoT, Bluetooth, LoRa, Telemetry",
+    "date": "2026-11-07 00:00:00 +0530",
+    "content": "A Concordia ECE capstone example using wearable sensors and wireless telemetry to monitor first responders. Included as academic inspiration."
+  },
+  
+  {
     "title": "Mobile Fitness App",
     "url": "/projects/mobile-fitness-app/",
     "categories": "Projects",

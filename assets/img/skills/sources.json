@@ -1,0 +1,239 @@
+[
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "path": "/assets/img/skills/amazonwebservices-original.svg",
+    "bytes": 3743,
+    "replaced": true
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/ansible/ansible-original.svg",
+    "path": "/assets/img/skills/ansible-original.svg",
+    "bytes": 377,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apple/apple-original.svg",
+    "path": "/assets/img/skills/apple-original.svg",
+    "bytes": 691,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/bash/bash-original.svg",
+    "path": "/assets/img/skills/bash-original.svg",
+    "bytes": 1800,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/bitbucket/bitbucket-original.svg",
+    "path": "/assets/img/skills/bitbucket-original.svg",
+    "bytes": 737,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-plain.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cypressio/cypressio-plain.svg",
+    "path": "/assets/img/skills/cypressio-plain.svg",
+    "bytes": 1701,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datadog/datadog-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/datadog/datadog-original.svg",
+    "path": "/assets/img/skills/datadog-original.svg",
+    "bytes": 3463,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg",
+    "path": "/assets/img/skills/docker-original.svg",
+    "bytes": 4452,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/elasticsearch/elasticsearch-original.svg",
+    "path": "/assets/img/skills/elasticsearch-original.svg",
+    "bytes": 552,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg",
+    "path": "/assets/img/skills/git-original.svg",
+    "bytes": 778,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/github/github-original.svg",
+    "path": "/assets/img/skills/github-original.svg",
+    "bytes": 1866,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg",
+    "path": "/assets/img/skills/githubactions-original.svg",
+    "bytes": 2854,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/gitlab/gitlab-original.svg",
+    "path": "/assets/img/skills/gitlab-original.svg",
+    "bytes": 1151,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/go/go-original.svg",
+    "path": "/assets/img/skills/go-original.svg",
+    "bytes": 8965,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/googlecloud/googlecloud-original.svg",
+    "path": "/assets/img/skills/googlecloud-original.svg",
+    "bytes": 782,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/grafana/grafana-original.svg",
+    "path": "/assets/img/skills/grafana-original.svg",
+    "bytes": 4958,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-plain.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/helm/helm-original.svg",
+    "path": "/assets/img/skills/helm-plain.svg",
+    "bytes": 2370,
+    "replaced": true
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/jenkins/jenkins-original.svg",
+    "path": "/assets/img/skills/jenkins-original.svg",
+    "bytes": 15407,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/jest/jest-plain.svg",
+    "path": "/assets/img/skills/jest-plain.svg",
+    "bytes": 3118,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/kubernetes/kubernetes-plain.svg",
+    "path": "/assets/img/skills/kubernetes-plain.svg",
+    "bytes": 4511,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/leetcode/leetcode-original.svg",
+    "path": "/assets/img/skills/leetcode-original.svg",
+    "bytes": 1554,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/linux/linux-original.svg",
+    "path": "/assets/img/skills/linux-original.svg",
+    "bytes": 193922,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mongodb/mongodb-original.svg",
+    "path": "/assets/img/skills/mongodb-original.svg",
+    "bytes": 5611,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg",
+    "path": "/assets/img/skills/mysql-original.svg",
+    "bytes": 2765,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openshift/openshift-original.svg",
+    "source": "https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg",
+    "path": "/assets/img/skills/openshift-original.svg",
+    "replaced": true
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg",
+    "path": "/assets/img/skills/postgresql-original.svg",
+    "bytes": 9178,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/prometheus/prometheus-original.svg",
+    "path": "/assets/img/skills/prometheus-original.svg",
+    "bytes": 1223,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/python/python-original.svg",
+    "path": "/assets/img/skills/python-original.svg",
+    "bytes": 2300,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg",
+    "path": "/assets/img/skills/redis-original.svg",
+    "bytes": 1728,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/selenium/selenium-original.svg",
+    "path": "/assets/img/skills/selenium-original.svg",
+    "bytes": 1096,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/sonarqube/sonarqube-original.svg",
+    "path": "/assets/img/skills/sonarqube-original.svg",
+    "bytes": 421,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/terraform/terraform-original.svg",
+    "path": "/assets/img/skills/terraform-original.svg",
+    "bytes": 376,
+    "replaced": false
+  },
+  {
+    "original": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/windows8/windows8-original.svg",
+    "path": "/assets/img/skills/windows8-original.svg",
+    "bytes": 276,
+    "replaced": false
+  },
+  {
+    "original": "https://raw.githubusercontent.com/cncf/artwork/master/projects/argo/stacked/color/argo-stacked-color.svg",
+    "source": "https://raw.githubusercontent.com/cncf/artwork/master/projects/argo/stacked/color/argo-stacked-color.svg",
+    "path": "/assets/img/skills/argocd.svg",
+    "bytes": 5261,
+    "replaced": false
+  }
+]

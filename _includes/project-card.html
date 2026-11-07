@@ -1,54 +1,45 @@
-<article class="project-card skill-card card shadow-sm h-100">
-  <div class="row g-3 align-items-center">
-    <div class="col-md-4">
-      {% if include.project.image %}
-        <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }} screenshot" class="project-card__image" loading="lazy" />
-      {% else %}
-        <div class="project-card__image placeholder d-flex align-items-center justify-content-center">
-          <span class="text-muted">Image coming soon</span>
-        </div>
-      {% endif %}
+{% assign project = include.project %}
+<article class="project-card card shadow-sm">
+  <div class="row g-0">
+    <div class="col-12 col-md-5 project-card__visual">
+      <a href="{{ project.post_url | relative_url }}" class="project-card__art-link img-link" aria-label="Read about {{ project.title | escape }}">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }} architecture illustration" width="900" height="600" class="project-card__image" loading="lazy" decoding="async">
+      </a>
     </div>
-    <div class="col-md-8">
-      {% assign link_title = include.link_title %}
-      {% if link_title == nil %}
-        {% assign link_title = true %}
-      {% endif %}
-      {% assign has_project_blog = link_title and include.project.post_url %}
-      <h3 class="h4 mb-2 project-card__title" data-toc-skip>
-        {% if has_project_blog %}
-          <a class="project-link project-link--blog" href="{{ include.project.post_url | relative_url }}">{{ include.project.title }}</a>
-        {% else %}
-          {{ include.project.title }}
+    <div class="col-12 col-md-7">
+      <div class="project-card__body">
+        <div class="project-card__eyebrow">
+          <span class="project-status{% if project.status == 'Completed' %} project-status--completed{% elsif project.status == 'Academic reference' %} project-status--reference{% endif %}">{{ project.status }}</span>
+          <span class="text-muted small">{{ project.category }}</span>
+        </div>
+        <h3 class="h4 mb-2 project-card__title" data-toc-skip>
+          <a class="project-link" href="{{ project.post_url | relative_url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project-card__subtitle text-muted mb-2">{{ project.subtitle }}</p>
+        <p>{{ project.description }}</p>
+        {% if project.highlights %}
+          <ul class="project-card__highlights">
+            {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+          </ul>
         {% endif %}
-      </h3>
-      {% if include.project.subtitle %}
-        <p class="text-muted mb-2">{{ include.project.subtitle }}</p>
-      {% endif %}
-      {% if include.project.description %}
-        <p>{{ include.project.description }}</p>
-      {% endif %}
-
-      {% if include.project.technologies %}
-        <p class="mb-3">
-          <strong>Technologies:</strong>
-          {% for tech in include.project.technologies %}
-            <span class="badge bg-secondary-subtle text-secondary-emphasis me-1">{{ tech }}</span>
-          {% endfor %}
-        </p>
-      {% endif %}
-
-      {% assign show_demo = include.show_demo %}
-      {% if show_demo == nil %}
-        {% assign show_demo = true %}
-      {% endif %}
-      <div class="d-flex flex-wrap gap-3">
-        {% if show_demo and include.project.demo_url %}
-          <a class="btn btn-outline-primary btn-sm" href="{{ include.project.demo_url }}" target="_blank" rel="noopener">Live Demo</a>
+        {% assign tags = project.focus | default: project.technologies %}
+        {% if tags %}
+          <div class="project-card__tags mb-3">
+            {% for tag in tags %}<span class="badge">{{ tag }}</span>{% endfor %}
+          </div>
         {% endif %}
-        {% if include.project.repo_url %}
-          <a class="btn btn-outline-secondary btn-sm" href="{{ include.project.repo_url }}" target="_blank" rel="noopener">GitHub</a>
-        {% endif %}
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-outline-primary btn-sm" href="{{ project.post_url | relative_url }}">{% if project.status == 'Production case study' %}Read Case Study{% elsif project.status == 'Academic reference' %}Read Reference{% else %}Project Overview{% endif %}</a>
+          {% if project.repo_url %}
+            <a class="btn btn-outline-secondary btn-sm" href="{{ project.repo_url | escape }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {% endif %}
+          {% if project.demo_url %}
+            <a class="btn btn-outline-secondary btn-sm" href="{{ project.demo_url | escape }}" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          {% endif %}
+          {% if project.source_url %}
+            <a class="btn btn-outline-secondary btn-sm" href="{{ project.source_url | escape }}" target="_blank" rel="noopener noreferrer">{{ project.source_label | default: 'Source' }}</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

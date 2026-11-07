@@ -29,7 +29,13 @@
 <details class="timeline-entry" {% if include.open %}open{% endif %}>
   <summary>
     <div class="timeline-entry__header">
-      <div>
+      <div class="timeline-entry__identity">
+        {% if item.logo %}
+          <div class="timeline-entry__logo{% if item.logo.fit == 'emblem' %} timeline-entry__logo--emblem{% endif %}">
+            <img src="{{ item.logo.path | relative_url }}" alt="{{ item.logo.alt | escape }}" width="64" height="64" loading="lazy" decoding="async">
+          </div>
+        {% endif %}
+        <div class="timeline-entry__heading">
         {% if period %}
           <p class="timeline-entry__period mb-1">{{ period }}</p>
         {% endif %}
@@ -42,6 +48,7 @@
         {% if meta %}
           <p class="timeline-entry__meta mb-0 text-muted">{{ meta }}</p>
         {% endif %}
+        </div>
       </div>
       <span class="timeline-entry__toggle" aria-hidden="true">
         <i class="fas fa-chevron-down"></i>
@@ -62,6 +69,26 @@
           <li>{{ highlight | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</li>
         {% endfor %}
       </ul>
+    {% endif %}
+
+    {% if item.sections %}
+      {% for section in item.sections %}
+        <section>
+          <h4 data-toc-skip>{{ section.title | escape }}</h4>
+          {% if section.focus %}
+            <p class="text-muted small">{{ section.focus | escape }}</p>
+          {% endif %}
+          <ul class="timeline-entry__list">
+            {% for highlight in section.highlights %}
+              <li>{{ highlight | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    {% endif %}
+
+    {% if item.tools %}
+      <p class="small"><strong>Tools:</strong> {{ item.tools | join: ' · ' | escape }}</p>
     {% endif %}
 
     {% if image_value %}

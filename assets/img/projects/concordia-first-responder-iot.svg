@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<title id="title">IoT Monitoring for First Responders architecture overview</title>
+<desc id="desc">A Concordia ECE capstone example using wearable sensors and wireless telemetry to monitor first responders. Included as academic inspiration.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111b30"/><stop offset="1" stop-color="#070e1c"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fb7185" stop-opacity=".22"/><stop offset="1" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#fb7185"/></marker>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<circle cx="790" cy="90" r="290" fill="url(#glow)"/>
+<g fill="none" stroke="#25344d" stroke-width="1" opacity=".6"><path d="M0 100H900M0 200H900M0 300H900M0 400H900M0 500H900M100 0V600M200 0V600M300 0V600M400 0V600M500 0V600M600 0V600M700 0V600M800 0V600"/></g>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="56" y="51" width="8" height="26" rx="4" fill="#fb7185"/>
+<text x="80" y="73" fill="#fb7185" font-size="23" font-weight="700" letter-spacing="2">CONCORDIA ECE · ACADEMIC REFERENCE</text>
+<text x="56" y="184" fill="#f8fafc" font-size="76" font-weight="700" letter-spacing="-2">Connected</text>
+<text x="56" y="270" fill="#fb7185" font-size="66" font-weight="700" letter-spacing="-1">response</text>
+<path d="M280 418H340M550 418H610" stroke="#fb7185" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="370" width="210" height="96" rx="18" fill="#152239" stroke="#fb7185" stroke-opacity=".55"/><circle cx="94" cy="394" r="5" fill="#fb7185"/><text x="175" y="430" text-anchor="middle" fill="#f1f5f9" font-size="25" font-weight="600">Wearables</text>
+<rect x="340" y="370" width="210" height="96" rx="18" fill="#152239" stroke="#fb7185" stroke-opacity=".55"/><circle cx="364" cy="394" r="5" fill="#fb7185"/><text x="445" y="430" text-anchor="middle" fill="#f1f5f9" font-size="25" font-weight="600">Wireless link</text>
+<rect x="610" y="370" width="210" height="96" rx="18" fill="#152239" stroke="#fb7185" stroke-opacity=".55"/><circle cx="634" cy="394" r="5" fill="#fb7185"/><text x="715" y="430" text-anchor="middle" fill="#f1f5f9" font-size="25" font-weight="600">Monitoring</text>
+<text x="56" y="550" fill="#a9b7cb" font-size="22">Published capstone · Group 2022-13</text>
+</g>
+</svg>

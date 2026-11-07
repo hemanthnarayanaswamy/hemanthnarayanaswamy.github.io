@@ -1,38 +1,34 @@
 ---
 title: Projects
 icon: fas fa-project-diagram
+media_local: true
+refactor: false
 ---
 
-{% assign featured_projects = site.data.projects.featured %}
-{% assign contribution_projects = site.data.projects.open_source %}
-{% assign client_projects = site.data.projects.client %}
+<p class="text-muted">Projects and production case studies spanning AI-assisted operations, enterprise retrieval, cloud platforms, and reliable delivery.</p>
 
 ## Featured Projects
 
-<div class="row gy-4">
-  {% for project in featured_projects %}
-    <div class="col-12">
-      {% include project-card.html project=project %}
-    </div>
+<div class="row gy-4 project-list">
+  {% for project in site.data.projects.featured %}
+    <div class="col-12">{% include project-card.html project=project %}</div>
   {% endfor %}
 </div>
 
-## Open Source Contributions
+## Production DevOps Case Studies
 
-<div class="row gy-4">
-  {% for project in contribution_projects %}
-    <div class="col-12">
-      {% include project-card.html project=project link_title=false show_demo=false %}
-    </div>
+<div class="row gy-4 project-list">
+  {% for project in site.data.projects.production %}
+    <div class="col-12">{% include project-card.html project=project %}</div>
   {% endfor %}
 </div>
 
-## Client Work
+## Academic Inspiration
 
-<div class="row gy-4">
-  {% for project in client_projects %}
-    <div class="col-12">
-      {% include project-card.html project=project link_title=false show_demo=false %}
-    </div>
+<p class="text-muted">An attributed example from Concordia's published Electrical and Computer Engineering capstone archive.</p>
+
+<div class="row gy-4 project-list">
+  {% for project in site.data.projects.academic %}
+    <div class="col-12">{% include project-card.html project=project %}</div>
   {% endfor %}
 </div>
